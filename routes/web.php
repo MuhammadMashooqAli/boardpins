@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BoardController;
 use App\Http\Controllers\PinController;
-
+use App\Http\Controllers\GeneratePinsController;
+use App\Http\Controllers\PintreseApiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +26,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::view('/about', 'about')->name('about');;
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/test', 'layouts.master');
-
+Route::get('request-pinterest-access-token', [PintreseApiController::class, 'requestPinterestAccess']);
 Route::resource('boards', BoardController::class)->middleware('auth');
-Route::resource('boards', PinController::class)->middleware('auth');
+Route::resource('pins', PinController::class)->middleware('auth');
+Route::get('generate', [GeneratePinsController::class, 'index'])->middleware('auth');
+Route::get('generate-pin-post', [GeneratePinsController::class, 'pin'])->middleware('auth');
