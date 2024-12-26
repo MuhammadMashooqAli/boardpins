@@ -1,14 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PintreseApiController extends Controller
 {
     //
     private $clientId = "1509018";
-    private $redirectUri = "http://localhost/pos/pointofsale/public/auth/pinterest/callback";
+    private $redirectUri;
+
+    public function __construct(){
+        $this->redirectUri = url("save/pinterest/access/token");
+    }
 
     public function requestPinterestAccess(){
 
@@ -21,5 +25,16 @@ class PintreseApiController extends Controller
         ]);
 
         return redirect($authUrl);
+    }
+
+    public function savePinterestAccess(Request $request){
+
+        if(auth()->user()){
+            $user = User::where('id', auth()->user()->id)->first();
+            $user->code = $request->code;
+            $user->state = $request->state;
+            $user->save();
+        }
+        return redirect()->to('/');
     }
 }

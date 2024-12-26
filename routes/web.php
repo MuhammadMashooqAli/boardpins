@@ -27,6 +27,7 @@ Route::view('/about', 'about')->name('about');;
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/test', 'layouts.master');
 Route::get('request-pinterest-access-token', [PintreseApiController::class, 'requestPinterestAccess']);
+Route::get('save/pinterest/access/token', [PintreseApiController::class, 'savePinterestAccess']);
 Route::resource('boards', BoardController::class)->middleware('auth');
 Route::resource('pins', PinController::class)->middleware('auth');
 Route::get('generate', [GeneratePinsController::class, 'index'])->middleware('auth');
