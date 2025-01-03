@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Symfony\Component\DomCrawler\Crawler;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
+use App\Models\Board;
 
 class GeneratePinsController extends Controller
 {
@@ -11,7 +12,8 @@ class GeneratePinsController extends Controller
     public $hostname;
 
     public function index(){
-       return view('generate.create');    
+    $boards = Board::where('user_id', auth()->user()->id)->select('id', 'name')->get();
+       return view('generate.create', compact('boards'));    
     }
 
     public function pin(Request $request){
@@ -23,47 +25,63 @@ class GeneratePinsController extends Controller
     public function scrape($url)
     {
         $this->hostname = parse_url($url, PHP_URL_HOST);
+        
         // Fetch the HTML content
-         $response = Http::get($url);
-         $html = $response->body();
- 
-         // Parse the HTML using DomCrawler
-         $crawler = new Crawler($html);
- 
-         $data = [];
-
-
-        // Extract the page title
+        $response = Http::get($url);
+        $html = $response->body();
+    
+        // Parse the HTML using DomCrawler
+        $crawler = new Crawler($html);
+    
+        $data = [];
         $pageTitle = $crawler->filter('title')->count() 
-        ? $crawler->filter('title')->text() 
-        : 'No title found';
- 
-         $crawler->filter('img')->each(function (Crawler $node) use (&$data, $pageTitle) {
+            ? $crawler->filter('title')->text() 
+            : 'No title found';
+    
+        // Process images
+        $crawler->filter('img')->each(function (Crawler $node) use (&$data, $pageTitle) {
+            // Extract image URLs from possible attributes
+            // $image = $node->attr('data-src') 
+            //    ??  $node->attr('data-src')
+            //    ??  $node->attr('src')
+            //     ?? $node->attr('data-hoversrc') 
+            //     ?? $node->attr('srcset');
+                
             $image = $node->attr('src') ?? $node->attr('data-src'); // Image src or data-src
-            $description = $node->attr('alt');                     // Image alt
-            $link = null;  
+
+            // Handle srcset to extract the first URL if it contains multiple URLs
         
-            // Find parent <a> tag if it exists for the image link
-            if ($node->ancestors()->filter('a')->count()) {
-                $link = $node->ancestors()->filter('a')->first()->attr('href');
+    
+              if ($image && str_ends_with(strtolower($image), '.png')) {
+               return; // Skip images with .png extension
             }
-        
-            // Fallback: if alt is missing, use title or null
-            if (!$description) {
-                $description = $pageTitle ?? null;
+            // Find the parent <a> tag for the link
+            $link = $node->ancestors()->filter('a')->count()
+                ? $node->ancestors()->filter('a')->first()->attr('href')
+                : null;
+    
+            // Normalize the image URL
+            // if ($image && !preg_match('/^https?:\/\//', $image)) {
+            //     $image = "https://" . $this->hostname . '/' . ltrim($image, '/');
+            // }
+    
+            // Normalize the link URL
+            if ($link && !preg_match('/^https?:\/\//', $link)) {
+                $link = "https://" . $this->hostname . '/' . ltrim($link, '/');
             }
-        
-            // Add data only if image exists
-            if ($image) {
+    
+            // Avoid duplicates
+            $existingImages = array_column($data, 'image');
+            if ($image && !in_array($image, $existingImages)) {
                 $data[] = [
-                    'link' => "https://".$this->hostname.'/'.$link,                // Link from ancestor <a> or null
-                    'description' => $description, // Alt or title
-                    'image' => $image,             // Image source
+                    'link' => $link,
+                    'description' => $node->attr('alt') ?? $pageTitle,
+                    'image' => $image,
                 ];
             }
         });
-        
- 
-         return $data;
-        }
+    
+        return $data;
+    }
+    
 }

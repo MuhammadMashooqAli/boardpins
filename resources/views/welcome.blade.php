@@ -1,653 +1,1475 @@
 @extends('layouts.master')
 @section('content')
-<main>
-    <!-- tp-slider-area-start -->
-    <div class="tp-hero-area hero-grideant-bg" data-background="assets/img/slider/slider-grident-bg.png">
-       <div class="container">
-          <div class="row align-items-center hero-space">
-             <div class="col-xl-6 col-lg-6">
-                <div class="tp-hero">
-                   <div class="tp-hero__section-box">
-                      <h4 class="tp-section-subtitle  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">Best solution we offer you</h4>
-                      <h2 class="tp-slider-title wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".6s">Make a good plan & grow your business</h2>
-                      <p class="wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".8s">We have almost 12+ years of experience for helping consulting services and business
-                         solutions. </p>
-                   </div>
-                   <div class="tp-hero__wrapper d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
-                      <div class="tp-hero__button">
-                         <a class="tp-btn" href="case-studies.html">Case Studies</a>
-                      </div>
-                      <div class="tp-hero__play-button">
-                         <a class="popup-video" href="https://www.youtube.com/watch?v=hiEb1m7CXH4"><i
-                               class="fas fa-play"></i></a>
-                         <span>See Inside</span>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-6 col-lg-6">
-                <div class="tp-hero__wrapper-thumb p-relative">
-                   <div class="tp-hero-shape-one">
-                      <img src="assets/img/slider/hero-star-shape.png "  alt="">
-                   </div>
-                   <div class="tp-hero-shape-two">
-                      <img src="assets/img/slider/hero-circle-shape.png " alt="">
-                   </div>
-                   <div class="tp-hero-shape-three">
-                      <img src="assets/img/slider/hero-angel-shape.png "  alt="">
-                   </div>
-                   <div class="tp-hero-shape-four">
-                      <img src="assets/img/slider/hero-star-sm-shape.png" alt="">
-                   </div>
-                   <div class="tp-hero__thumb text-start text-lg-end wow tpfadeRight"  data-wow-duration=".9s" data-wow-delay="1.2s">
-                      <img src="assets/img/slider/hero-1.png" alt="">
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="row">
-             <div class="col-xl-5 col-lg-5 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">
-                <div class="tp-slider-exprience">
-                   <div class="tp-slider-exprience__content">
-                      <h4 class="tp-slider-exp-title">24 Year of Experience</h4>
-                      <p>“Lorem Ipsum is simply dummy text of printing and typesetting industry Ipsum is dummy text of
-                         the printing industry”</p>
-                   </div>
-                   <div class="tp-slider-exprience__client-info d-flex align-items-center">
-                      <div class="tp-slider-exprience__img">
-                         <img src="assets/img/slider/hero-sm-img.png" alt="">
-                      </div>
-                      <div class="tp-slider-exprience__meta">
-                         <h5 class="tp-client-name">Darrell Steward</h5>
-                         <span>Founder of (Sixart <i class="fas fa-star"></i> - 5 star Agency)</span>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-7 col-lg-7">
-                <div class="row">
-                   <div class="col-xl-6 col-lg-6 col-md-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
-                      <div class="tp-slider-exp-item mb-30">
-                         <div class="tp-slider-exp-item__icon icon-bg-green">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <g clip-path="url(#clip0_289_84)">
-                                  <path
-                                     d="M23.2969 0H20.4375C20.0489 0 19.7344 0.314484 19.7344 0.703125V1.40625H13.9799C13.6886 0.589594 12.9155 0 12 0C11.0845 0 10.3114 0.589594 10.0201 1.40625H4.26562V0.703125C4.26562 0.314484 3.95114 0 3.5625 0H0.703125C0.314484 0 0 0.314484 0 0.703125V3.51562C0 3.90427 0.314484 4.21875 0.703125 4.21875H3.5625C3.95114 4.21875 4.26562 3.90427 4.26562 3.51562V2.80312H7.15331C4.71314 4.32755 3.10416 7.005 2.91183 10.0038C2.06817 10.28 1.45312 11.0653 1.45312 12C1.45312 13.1632 2.39934 14.1094 3.5625 14.1094C4.72566 14.1094 5.67188 13.1632 5.67188 12C5.67188 11.1028 5.10652 10.34 4.31531 10.0356C4.55522 6.69225 6.88809 3.87431 10.1331 3.07031C10.4841 3.74892 11.1847 4.21875 12 4.21875C12.8153 4.21875 13.5159 3.74892 13.8669 3.07031C17.1119 3.87427 19.4448 6.6922 19.6847 10.0356C18.8935 10.34 18.3281 11.1028 18.3281 12C18.3281 13.1632 19.2743 14.1094 20.4375 14.1094C21.6007 14.1094 22.5469 13.1632 22.5469 12C22.5469 11.0653 21.9318 10.28 21.0882 10.0038C20.8958 7.005 19.2869 4.33692 16.8467 2.8125H19.7344V3.51562C19.7344 3.90427 20.0489 4.21875 20.4375 4.21875H23.2969C23.6855 4.21875 24 3.90427 24 3.51562V0.703125C24 0.314484 23.6855 0 23.2969 0Z"
-                                     fill="currentColor" />
-                                  <path
-                                     d="M16.7835 23.1279C16.4157 22.0025 15.3561 21.1406 14.1093 21.1406H9.89052C8.64365 21.1406 7.58408 22.0025 7.2163 23.1279C7.07451 23.5618 7.44365 24 7.90021 24H16.0996C16.5561 24 16.9253 23.5618 16.7835 23.1279Z"
-                                     fill="currentColor" />
-                                  <path
-                                     d="M18.21 14.4225L12.7031 6.16217V12.8327C13.5198 13.1239 14.1094 13.8971 14.1094 14.8125C14.1094 15.9757 13.1632 16.9219 12 16.9219C10.8369 16.9219 9.89063 15.9757 9.89063 14.8125C9.89063 13.8971 10.4802 13.1239 11.2969 12.8327V6.16217L5.79001 14.4225C5.60391 14.7013 5.64099 15.0728 5.8779 15.3097C7.16869 16.6005 7.99379 18.2634 8.31221 20.0471C8.80065 19.849 9.33188 19.7344 9.89063 19.7344H14.1094C14.6681 19.7344 15.1994 19.8489 15.6878 20.047C16.0062 18.2632 16.8313 16.6005 18.1221 15.3097C18.359 15.0728 18.3961 14.7013 18.21 14.4225Z"
-                                     fill="currentColor" />
-                                  <path
-                                     d="M12 14.1094C11.6121 14.1094 11.2969 14.4246 11.2969 14.8125C11.2969 15.2004 11.6121 15.5156 12 15.5156C12.3879 15.5156 12.7031 15.2004 12.7031 14.8125C12.7031 14.4246 12.3879 14.1094 12 14.1094Z"
-                                     fill="currentColor" />
-                               </g>
-                               <defs>
-                                  <clipPath id="clip0_289_84">
-                                     <rect width="24" height="24" fill="currentColor" />
-                                  </clipPath>
-                               </defs>
-                            </svg>
-                         </div>
-                         <div class="tp-slider-exp-item__content">
-                            <h4 class="tp-exp-sm-title">Service we can <br> help you with</h4>
-                         </div>
-                         <div class="tp-slider-exp-item__service-link">
-                            <div class="tp-link tp-link-green">
-                               <a href="service.html">
-                                  <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                     <path
-                                        d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                        fill="#202026" />
-                                  </svg>
-                                  <span>Our Service</span>
-                               </a>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-xl-6 col-lg-6 col-md-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s">
-                      <div class="tp-slider-exp-item mb-30">
-                         <div class="tp-slider-exp-item__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                               xmlns="http://www.w3.org/2000/svg">
-                               <g clip-path="url(#clip0_289_84)">
-                                  <path
-                                     d="M23.2969 0H20.4375C20.0489 0 19.7344 0.314484 19.7344 0.703125V1.40625H13.9799C13.6886 0.589594 12.9155 0 12 0C11.0845 0 10.3114 0.589594 10.0201 1.40625H4.26562V0.703125C4.26562 0.314484 3.95114 0 3.5625 0H0.703125C0.314484 0 0 0.314484 0 0.703125V3.51562C0 3.90427 0.314484 4.21875 0.703125 4.21875H3.5625C3.95114 4.21875 4.26562 3.90427 4.26562 3.51562V2.80312H7.15331C4.71314 4.32755 3.10416 7.005 2.91183 10.0038C2.06817 10.28 1.45312 11.0653 1.45312 12C1.45312 13.1632 2.39934 14.1094 3.5625 14.1094C4.72566 14.1094 5.67188 13.1632 5.67188 12C5.67188 11.1028 5.10652 10.34 4.31531 10.0356C4.55522 6.69225 6.88809 3.87431 10.1331 3.07031C10.4841 3.74892 11.1847 4.21875 12 4.21875C12.8153 4.21875 13.5159 3.74892 13.8669 3.07031C17.1119 3.87427 19.4448 6.6922 19.6847 10.0356C18.8935 10.34 18.3281 11.1028 18.3281 12C18.3281 13.1632 19.2743 14.1094 20.4375 14.1094C21.6007 14.1094 22.5469 13.1632 22.5469 12C22.5469 11.0653 21.9318 10.28 21.0882 10.0038C20.8958 7.005 19.2869 4.33692 16.8467 2.8125H19.7344V3.51562C19.7344 3.90427 20.0489 4.21875 20.4375 4.21875H23.2969C23.6855 4.21875 24 3.90427 24 3.51562V0.703125C24 0.314484 23.6855 0 23.2969 0Z"
-                                     fill="currentColor" />
-                                  <path
-                                     d="M16.7835 23.1279C16.4157 22.0025 15.3561 21.1406 14.1093 21.1406H9.89052C8.64365 21.1406 7.58408 22.0025 7.2163 23.1279C7.07451 23.5618 7.44365 24 7.90021 24H16.0996C16.5561 24 16.9253 23.5618 16.7835 23.1279Z"
-                                     fill="currentColor" />
-                                  <path
-                                     d="M18.21 14.4225L12.7031 6.16217V12.8327C13.5198 13.1239 14.1094 13.8971 14.1094 14.8125C14.1094 15.9757 13.1632 16.9219 12 16.9219C10.8369 16.9219 9.89063 15.9757 9.89063 14.8125C9.89063 13.8971 10.4802 13.1239 11.2969 12.8327V6.16217L5.79001 14.4225C5.60391 14.7013 5.64099 15.0728 5.8779 15.3097C7.16869 16.6005 7.99379 18.2634 8.31221 20.0471C8.80065 19.849 9.33188 19.7344 9.89063 19.7344H14.1094C14.6681 19.7344 15.1994 19.8489 15.6878 20.047C16.0062 18.2632 16.8313 16.6005 18.1221 15.3097C18.359 15.0728 18.3961 14.7013 18.21 14.4225Z"
-                                     fill="currentColor" />
-                                  <path
-                                     d="M12 14.1094C11.6121 14.1094 11.2969 14.4246 11.2969 14.8125C11.2969 15.2004 11.6121 15.5156 12 15.5156C12.3879 15.5156 12.7031 15.2004 12.7031 14.8125C12.7031 14.4246 12.3879 14.1094 12 14.1094Z"
-                                     fill="currentColor" />
-                               </g>
-                               <defs>
-                                  <clipPath>
-                                     <rect width="24" height="24" fill="currentColor" />
-                                  </clipPath>
-                               </defs>
-                            </svg>
-                         </div>
-                         <div class="tp-slider-exp-item__content">
-                            <h4 class="tp-exp-sm-title">Why you should choose us </h4>
-                         </div>
-                         <div class="tp-slider-exp-item__service-link">
-                            <div class="tp-link">
-                               <a href="about-us.html">
-                                  <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                     <path
-                                        d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                        fill="#202026" />
-                                  </svg>
-                                  <span>About us</span>
-                               </a>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-slider-area-end -->
-
-    <!-- tp-about-area-start -->
-    <div class="tp-about-area ab-area-sapce pt-120 pb-120">
-       <div class="container">
-          <div class="row align-items-center">
-             <div class="col-xl-5 col-lg-5 order-2 order-lg-1 wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".5s">
-                <div class="tp-ab-wrapper p-relative">
-                   <div class="tp-ab-shape-one z-index-3">
-                      <img src="assets/img/about/about-shape-1.png" alt="">
-                   </div>
-                   <div class="tp-ab-shape-two z-index-3">
-                      <img src="assets/img/about/about-circle-shape.png" alt="">
-                   </div>
-                   <div class="tp-about-thumb">
-                      <img src="assets/img/about/about-img.jpg" alt="">
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-7 col-lg-7 order-1 order-lg-2 wow tpfadeRight" data-wow-duration=".7s" data-wow-delay=".7s">
-                <div class="tp-ab-section-title-box">
-                   <h4 class="tp-section-subtitle tp-green-color">Who we are?</h4>
-                   <h3 class="tp-section-title">We are dynamic team of creative design and development</h3>
-                   <p>We have almost 12+ years of experience for helping consulting services <br> and business
-                      solutions and best protect.</p>
-                   <a class="tp-btn" href="about-us.html">About our Agency</a>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-about-area-end -->
-
-    <!-- tp-service-area-start -->
-    <div class="tp-service-area service-space-bottom pb-110 ">
-       <div class="container">
-          <div class="row">
-             <div class="col-xl-5 col-lg-5 wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".5s">
-                <div class="service-section-wrapper">
-                   <div class="tp-service-section-title-box">
-                      <h4 class="tp-section-subtitle tp-yellow-color">What we can do for you?</h4>
-                      <h3 class="tp-section-title">Service we can help you with</h3>
-                   </div>
-                   <div class="tp-service-content mb-20">
-                      <h4 class="tp-service-sm-title">We'll ensure you always get the best Digital Service</h4>
-                      <a class="tp-btn" href="service.html">See all Services</a>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-7 col-lg-7">
-                <div class="row service-space-left">
-                   <div class="col-12 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s">
-                      <div class="tp-service-item mb-20 d-flex justify-content-between">
-                         <div class="tp-service-item__content">
-                            <h4 class="tp-service-sm-title"><a href="service-details.html">Web <br> Development</a></h4>
-                            <div class="tp-service-item__button-link">
-                               <a href="service-details.html">
-                                  <span>
-                                     <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                           d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                           fill="currentColor" />
-                                     </svg>
-                                  </span>
-                                  Read More
-                               </a>
-                            </div>
-                         </div>
-                         <div class="tp-service-item__icon">
-                            <span>
-                               <svg width="32" height="24" viewBox="0 0 32 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                     d="M27.4713 0.293701H4.52875C2.03187 0.293701 0 2.32558 0 4.82308V19.1768C0 21.6743 2.03187 23.7062 4.52875 23.7062H27.4713C29.9681 23.7062 32 21.6743 32 19.1768V4.82308C32 2.32558 29.9681 0.293701 27.4713 0.293701ZM11.6131 7.49933L6.84875 12.2637L11.0856 16.5006C11.4519 16.8668 11.4519 17.4606 11.0856 17.8262C10.72 18.1925 10.1263 18.1925 9.76 17.8262L4.86 12.9262C4.49375 12.56 4.49375 11.9668 4.86 11.6006L10.2869 6.1737C10.6531 5.80745 11.2469 5.80745 11.6131 6.1737C11.9788 6.53933 11.9788 7.13308 11.6131 7.49933ZM19.3463 5.2937L14.3888 19.3306C14.2163 19.8193 13.6806 20.075 13.1925 19.9025C12.7044 19.73 12.4481 19.1943 12.6206 18.7062L17.5781 4.66933C17.7506 4.1812 18.2856 3.92495 18.7744 4.09745C19.2625 4.26995 19.5188 4.80558 19.3463 5.2937ZM27.14 12.3993L21.7131 17.8262C21.3469 18.1925 20.7531 18.1925 20.3869 17.8262C20.0212 17.4606 20.0212 16.8668 20.3869 16.5006L25.1513 11.7362L20.9144 7.49933C20.5481 7.13308 20.5481 6.53933 20.9144 6.1737C21.28 5.80745 21.8738 5.80745 22.24 6.1737L27.14 11.0737C27.5062 11.44 27.5062 12.0331 27.14 12.3993Z"
-                                     fill="currentColor" />
-                               </svg>
-                            </span>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-12 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                      <div class="tp-service-item sv-color-blue-one mb-20 d-flex justify-content-between">
-                         <div class="tp-service-item__content">
-                            <h4 class="tp-service-sm-title"><a href="service-details.html">Mobile app <br> Development</a></h4>
-                            <div class="tp-service-item__button-link">
-                               <a href="service-details.html">
-                                  <span>
-                                     <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                           d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                           fill="currentColor" />
-                                     </svg>
-                                  </span>
-                                  Read More
-                               </a>
-                            </div>
-                         </div>
-                         <div class="tp-service-item__icon">
-                            <span>
-                               <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                     d="M1.0574 22.7392L1.3939 22.8097C1.50788 23.1734 1.64903 23.5265 1.83365 23.8737L1.63816 24.156C1.37217 24.574 1.43737 25.1333 1.77388 25.4861L2.6262 26.3274C2.979 26.6914 3.5273 26.7454 3.96161 26.4687L4.25477 26.2678C4.59127 26.4523 4.95508 26.5936 5.31875 26.7075L5.38939 27.055C5.48707 27.5436 5.89964 27.8746 6.3936 27.8855C6.3936 27.9473 6.3936 31.4329 6.3936 31.3762C6.3936 33.5799 8.18505 35.3715 10.3891 35.3715H23.4503C25.6542 35.3715 27.4456 33.5799 27.4456 31.3762C27.4456 29.7484 27.4456 26.5093 27.4456 24.7532H27.8419C28.4879 24.7532 29.0579 24.2973 29.1719 23.6622L29.2642 23.2169C29.731 23.0812 30.1816 22.8858 30.6159 22.647L30.9905 22.8967C31.5388 23.2603 32.2553 23.1843 32.7004 22.7284L33.7698 21.6588C34.2476 21.2029 34.3236 20.4756 33.949 19.9271L33.6993 19.5526C33.9382 19.1184 34.1228 18.6625 34.2694 18.1737L34.6765 18.0923C35.3279 17.9675 35.7947 17.4138 35.7947 16.7731V15.237C35.7947 14.5911 35.3279 14.0209 34.6765 13.8961L34.2476 13.8038C34.1119 13.3479 33.9164 12.8809 33.6776 12.452L33.9164 12.0883C34.2802 11.5401 34.2259 10.8128 33.759 10.3675L32.6733 9.28708C32.2228 8.83116 31.5062 8.74978 30.9579 9.11346L30.5725 9.36872C30.1382 9.12989 29.6714 8.93427 29.2045 8.79856L29.1231 8.38611C29.009 7.75101 28.4553 7.28423 27.7931 7.28423H27.4456C27.4456 7.21717 27.4456 4.57445 27.4456 4.62958C27.4456 2.39798 25.6227 0.628662 23.4503 0.628662H10.3891C8.20573 0.628662 6.3936 2.41018 6.3936 4.62958V14.2815C5.87248 14.287 5.4436 14.6398 5.35679 15.1284L5.29158 15.465C4.92248 15.5843 4.5588 15.7364 4.2113 15.9209L3.93444 15.7364C3.51113 15.4486 2.95183 15.5029 2.60446 15.8557L1.76301 16.7026C1.41021 17.0557 1.35043 17.62 1.62186 18.0489L1.81735 18.3312C1.63816 18.6787 1.49701 19.0315 1.38304 19.406L1.04653 19.4656C0.541581 19.5743 0.205078 19.9979 0.205078 20.4973V21.7023C0.205078 22.2072 0.56875 22.6414 1.0574 22.7392ZM16.9195 33.5312C16.3442 33.5312 15.8719 33.0644 15.8719 32.4836C15.8719 31.9026 16.3442 31.4358 16.9195 31.4358C17.5004 31.4358 17.9673 31.9026 17.9673 32.4836C17.9673 33.0644 17.5004 33.5312 16.9195 33.5312ZM31.8265 14.1566C33.1655 17.7143 30.6136 21.2495 26.9028 21.1377C24.6908 21.0067 23.1075 19.7572 22.4622 18.0436C21.1599 14.5842 23.5292 11.2563 26.9028 11.0625C29.2428 10.9899 31.1112 12.2577 31.8265 14.1566ZM15.9425 2.43642H17.8968C18.1953 2.43642 18.4397 2.68055 18.4397 2.97928C18.4397 3.27774 18.1953 3.52213 17.8968 3.52213H15.9425C15.6439 3.52213 15.3996 3.27774 15.3996 2.97928C15.3996 2.68055 15.6439 2.43642 15.9425 2.43642ZM7.47931 5.32432H26.3599V7.28423H26.2677C25.6 7.28423 25.0408 7.74014 24.9267 8.37524L24.8453 8.80942C24.3677 8.95601 23.9007 9.15136 23.4556 9.39045L23.1028 9.15136C22.5599 8.78769 21.8433 8.85289 21.3981 9.30881L20.318 10.3892C19.8619 10.8451 19.7804 11.5727 20.1333 12.1209L20.383 12.4846C20.1551 12.9299 19.9759 13.3858 19.8293 13.8635L19.395 13.9395C18.749 14.0752 18.3147 14.6234 18.3147 15.2585V16.8113C18.3147 17.4572 18.7816 18.0163 19.4059 18.1414L19.8402 18.2336C19.9868 18.7004 20.1714 19.151 20.4102 19.5961L20.1551 19.9597C19.8184 20.4973 19.8945 21.2138 20.3288 21.6699L21.4198 22.7501C21.8759 23.2169 22.5816 23.2821 23.1408 22.9293L23.5153 22.6687C23.9496 22.9075 24.4164 23.092 24.8779 23.2386L24.9702 23.6839C25.095 24.319 25.6433 24.7532 26.3056 24.7532H26.3599V30.0461H7.47931V27.8911H7.62589C8.13071 27.8911 8.57589 27.5327 8.6627 27.0386L8.73334 26.6914C9.09702 26.588 9.44995 26.4361 9.78645 26.2514L10.0796 26.447C10.5085 26.7293 11.0677 26.6641 11.4096 26.3113L12.2456 25.4752C12.6147 25.1224 12.6799 24.5578 12.3868 24.129L12.1913 23.8358C12.3759 23.4992 12.517 23.1464 12.6365 22.7663L12.9514 22.7013C13.4616 22.6035 13.8254 22.1693 13.8254 21.6752V20.4756C13.8254 19.9706 13.4616 19.5309 12.9514 19.4333L12.6147 19.3628C12.5116 19.0044 12.3596 18.6408 12.1751 18.3041L12.3596 18.0218C12.6419 17.5929 12.5984 17.0284 12.2347 16.6809L11.3933 15.8395C11.0405 15.4867 10.4813 15.4215 10.0524 15.7091L9.75398 15.9047C9.41735 15.7147 9.05368 15.5628 8.68987 15.4594L8.6248 15.1392C8.53786 14.6451 8.10368 14.2815 7.58786 14.2815H7.47931V5.32432ZM6.3936 17.924C7.841 17.6083 9.54842 18.3129 10.1394 19.8784C11.0461 22.2905 9.19761 24.5714 6.93645 24.4383C5.66599 24.4007 4.48922 23.6442 4.02668 22.419C3.23413 20.3181 4.51533 18.3259 6.3936 17.924Z"
-                                     fill="currentColor" />
-                               </svg>
-                            </span>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-12 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
-                      <div class="tp-service-item sv-color-blue-two mb-20 d-flex justify-content-between">
-                         <div class="tp-service-item__content">
-                            <h4 class="tp-service-sm-title"><a href="service-details.html">Any kind Custom <br> Solution</a></h4>
-                            <div class="tp-service-item__button-link">
-                               <a href="service-details.html">
-                                  <span>
-                                     <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                           d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                           fill="currentColor" />
-                                     </svg>
-                                  </span>
-                                  Read More
-                               </a>
-                            </div>
-                         </div>
-                         <div class="tp-service-item__icon">
-                            <span>
-                               <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                     d="M34.8901 15.5569C34.8348 15.065 34.261 14.6949 33.7648 14.6949C32.1613 14.6949 30.7382 13.7537 30.1414 12.297C29.5321 10.8053 29.9252 9.06604 31.1199 7.97002C31.4962 7.62598 31.5421 7.04989 31.2266 6.64999C30.4056 5.60771 29.4729 4.66608 28.4543 3.85009C28.0557 3.53041 27.4701 3.57491 27.1243 3.95771C26.0812 5.11291 24.2075 5.54217 22.7596 4.93808C21.2534 4.30433 20.3026 2.77753 20.396 1.13873C20.4268 0.623645 20.0502 0.176067 19.5369 0.116278C18.2296 -0.035084 16.9108 -0.0394735 15.5997 0.105986C15.0929 0.16199 14.7166 0.598973 14.7334 1.10755C14.7902 2.73031 13.8287 4.23016 12.337 4.84121C10.9065 5.42562 9.04582 4.99953 8.0049 3.85448C7.66086 3.47728 7.08553 3.43097 6.68427 3.74383C5.63563 4.56679 4.68189 5.50902 3.85333 6.54283C3.53048 6.94469 3.57816 7.52714 3.95762 7.87239C5.17594 8.97568 5.56872 10.73 4.93618 12.2391C4.33224 13.6778 2.83845 14.6045 1.1285 14.6045C0.57361 14.5867 0.178705 14.9595 0.117404 15.4641C-0.0363807 16.7784 -0.0380457 18.1183 0.109987 19.4433C0.165234 19.9373 0.756002 20.3042 1.25762 20.3042C2.78184 20.2655 4.2443 21.2085 4.85868 22.702C5.47004 24.1937 5.07649 25.9322 3.87982 27.0297C3.5055 27.3738 3.45767 27.9485 3.77372 28.348C4.58638 29.3837 5.51998 30.326 6.54168 31.1489C6.94279 31.4719 7.52614 31.4267 7.87382 31.0434C8.92095 29.8855 10.7944 29.457 12.2364 30.0623C13.747 30.6944 14.6972 32.221 14.6045 33.8603C14.574 34.3754 14.9515 34.8243 15.463 34.8827C16.132 34.961 16.8045 34.9997 17.4791 34.9997C18.1194 34.9997 18.7598 34.9648 19.4002 34.8935C19.9076 34.8375 20.2833 34.4 20.2662 33.8913C20.2076 32.2693 21.1712 30.7693 22.661 30.1595C24.1011 29.5713 25.9535 30.0017 26.995 31.1451C27.3409 31.5216 27.9127 31.5673 28.3156 31.2556C29.3625 30.4348 30.3144 29.493 31.1466 28.4565C31.4697 28.0554 31.4239 27.4722 31.0423 27.1263C29.8243 26.0238 29.4294 24.2687 30.0619 22.7612C30.6564 21.3418 32.0947 20.3889 33.6416 20.3889L33.8581 20.3946C34.3603 20.4353 34.8218 20.0486 34.8825 19.5362C35.037 18.2207 35.0387 16.8824 34.8901 15.5569ZM17.5002 27.5887C11.9281 27.5887 7.41126 23.0719 7.41126 17.5C7.41126 11.928 11.9282 7.41119 17.5002 7.41119C23.0721 7.41119 27.5891 11.928 27.5891 17.5C27.5891 19.3912 27.0676 21.1602 26.162 22.6729L21.7444 18.2551C22.0642 17.501 22.2331 16.6835 22.233 15.8398C22.233 14.1877 21.5895 12.6346 20.4212 11.4665C19.2531 10.2984 17.7 9.65514 16.0482 9.65514C15.4969 9.65514 14.9482 9.7284 14.4174 9.87295C14.1849 9.93637 13.9948 10.128 13.9329 10.3609C13.8696 10.5992 13.9409 10.8433 14.1271 11.0297C14.1271 11.0297 16.308 13.2274 17.0378 13.957C17.1142 14.0335 17.114 14.2158 17.1033 14.2815L17.0965 14.3295C17.0229 15.1317 16.8811 16.0947 16.7641 16.4648C16.7484 16.4804 16.7335 16.4935 16.7175 16.5096C16.7007 16.5264 16.6852 16.5426 16.669 16.5592C16.2941 16.6796 15.3163 16.8231 14.5014 16.896L14.5015 16.8916L14.4649 16.9009C14.4584 16.9016 14.4463 16.9025 14.4302 16.9025C14.3421 16.9025 14.2126 16.8779 14.0948 16.7602C13.3353 16.0007 11.2398 13.9202 11.2398 13.9202C11.0518 13.7328 10.859 13.6935 10.7305 13.6935C10.4309 13.6935 10.1627 13.9099 10.0783 14.2204C9.50142 16.355 10.1129 18.6512 11.6745 20.213C12.8429 21.3812 14.3962 22.0245 16.0483 22.0245C16.892 22.0245 17.7095 21.8557 18.4634 21.5359L22.9291 26.0015C21.3613 27.0048 19.4995 27.5887 17.5002 27.5887Z"
-                                     fill="currentColor" />
-                               </svg>
-                            </span>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-service-area-end -->
-
-    <!-- tp-case-area-start -->
-    <div class="tp-case-area case-bg case-space" data-background="assets/img/case/case-grident-shape.png">
-       <div class="container">
-          <div class="row justify-content-center">
-             <div class="col-xl-8 col-12  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">
-                <div class="tp-case-section-title-box text-center mb-60">
-                   <h4 class="tp-section-subtitle tp-green-color">Check our Work</h4>
-                   <h3 class="tp-section-title">Some of our recent case studies</h3>
-                </div>
-             </div>
-          </div>
-          <div class="row gx-20">
-             <div class="col-xl-6 col-lg-6  wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".5s">
-                <div class="tp-case-thumb p-relative fix mb-20">
-                   <img src="assets/img/case/case-1.jpg" alt="">
-                   <div class="case-icon">
-                      <a class="popup-image" href="assets/img/case/case-1.jpg"><i class="fas fa-arrow-alt-up"></i></a>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-6 col-lg-6  wow tpfadeRight" data-wow-duration=".7s" data-wow-delay=".7s">
-                <div class="tp-case-thumb p-relative fix mb-20">
-                   <img src="assets/img/case/case-2.jpg" alt="">
-                   <div class="case-icon">
-                      <a class="popup-image" href="assets/img/case/case-3.jpg"><i class="fas fa-arrow-alt-up"></i></a>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-6 col-lg-6  wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".9s">
-                <div class="tp-case-thumb p-relative fix mb-20">
-                   <img src="assets/img/case/case-3.jpg" alt="">
-                   <div class="case-icon">
-                      <a class="popup-image" href="assets/img/case/case-3.jpg"><i class="fas fa-arrow-alt-up"></i></a>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-6 col-lg-6  wow tpfadeRight" data-wow-duration=".7s" data-wow-delay="1s">
-                <div class="tp-case-thumb p-relative fix mb-20">
-                   <img src="assets/img/case/case-4.jpg" alt="">
-                   <div class="case-icon">
-                      <a class="popup-image" href="assets/img/case/case-4.jpg"><i class="fas fa-arrow-alt-up"></i></a>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="row">
-             <div class="col-xl-12">
-                <div class="tp-case-button text-center mt-40">
-                   <a class="tp-btn" href="case-studies.html">all Case studeis</a>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-case-area-end -->
-
-    <!-- tp-service-area-start -->
-    <div class="tp-testimonial-area tp-testimonial-space p-relative testimonial-border-shape" data-background="assets/img/testimonial/testi-border-shape.png">
-       <div class="container">
-          <div class="row">
-             <div class="col-xl-6 col-lg-12 wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".5s">
-                <div class="service-section-wrapper">
-                   <div class="tp-testimonial-section-title-box">
-                      <h4 class="tp-section-subtitle tp-yellow-color">Happy customer feedback</h4>
-                      <h3 class="tp-section-title">Happy customer feedback</h3>
-                   </div>
-                   <div class="tp-service-content mb-20">
-                      <h4 class="tp-service-sm-title">We love our client and our clients <br> loved us. see all
-                         feedback</h4>
-                      <a class="tp-btn" href="about-us.html">See all Feedback</a>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-6 col-lg-12">
-                <div class="row">
-                   <div class="col-xl-12 col-lg-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s">
-                      <div class="tp-testimonial-item mb-30">
-                         <div class="tp-testimonial-item__icon">
-                            <i class="fas fa-quote-right"></i>
-                         </div>
-                         <div class="tp-testimonial-item__text">
-                            <p>Our office is something we are pleased with. We consider it the little magnet; it is
-                               wanting to come here and afterward difficult to leave it.</p>
-                         </div>
-                         <div class="tp-testimonial-item__wrapper d-flex justify-content-between align-items-center">
-                            <div class="tp-testimonial-item__info d-flex align-items-center">
-                               <div class="tp-testimonial-item__info-img">
-                                  <img src="assets/img/testimonial/testi-img-1.png" alt="">
-                               </div>
-                               <div class="tp-testimonial-item__info-text">
-                                  <h4 class="client-name">Wade Warren</h4>
-                                  <span>Founder of Edardx</span>
-                               </div>
-                            </div>
-                            <div class="tp-testimonial-item__ratting d-none d-md-block">
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-xl-12 col-lg-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                      <div class="tp-testimonial-item testimonial-bg-color-2 mb-30">
-                         <div class="tp-testimonial-item__icon">
-                            <i class="fas fa-quote-right"></i>
-                         </div>
-                         <div class="tp-testimonial-item__text">
-                            <p>He works very smart always fast and ahead of time. He's also a team player Looking
-                               forward to working with him in the future</p>
-                         </div>
-                         <div class="tp-testimonial-item__wrapper d-flex justify-content-between align-items-center">
-                            <div class="tp-testimonial-item__info d-flex align-items-center">
-                               <div class="tp-testimonial-item__info-img">
-                                  <img src="assets/img/testimonial/testi-img-2.png" alt="">
-                               </div>
-                               <div class="tp-testimonial-item__info-text">
-                                  <h4 class="client-name">Marvin McKinney</h4>
-                                  <span>Founder of Edardx</span>
-                               </div>
-                            </div>
-                            <div class="tp-testimonial-item__ratting d-none d-md-block">
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-xl-12 col-lg-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
-                      <div class="tp-testimonial-item testimonial-bg-color-3 mb-30">
-                         <div class="tp-testimonial-item__icon">
-                            <i class="fas fa-quote-right"></i>
-                         </div>
-                         <div class="tp-testimonial-item__text">
-                            <p>Sixmart is an Excellent Writer, His magical words added value in growth of our
-                               business. Highly Recommended</p>
-                         </div>
-                         <div class="tp-testimonial-item__wrapper d-flex justify-content-between align-items-center">
-                            <div class="tp-testimonial-item__info d-flex align-items-center">
-                               <div class="tp-testimonial-item__info-img">
-                                  <img src="assets/img/testimonial/testi-img-3.png" alt="">
-                               </div>
-                               <div class="tp-testimonial-item__info-text">
-                                  <h4 class="client-name">Savannah Nguyen</h4>
-                                  <span>Founder of Edardx</span>
-                               </div>
-                            </div>
-                            <div class="tp-testimonial-item__ratting d-none d-md-block">
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                               <span><i class="fas fa-star"></i></span>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-service-area-end -->
-
-    <!-- tp-barnd-area-start -->
-    <div class="tp-brand-area brand-space-bottom pb-110">
-       <div class="container">
-          <div class="row">
-             <div class="col-12">
-                <div class="tp-brand-title-box pb-60">
-                   <h4 class="tp-brand-title"><span>Over 250+</span> business growing with us</h4>
-                </div>
-             </div>
-          </div>
-          <div class="brand-slider-active d-flex align-items-center">
-             <div class="brand-item">
-                <div class="tp-brand-icon">
-                   <img src="assets/img/brand/brand-1.png" alt="">
-                </div>
-             </div>
-             <div class="brand-item wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">
-                <div class="tp-brand-icon">
-                   <img src="assets/img/brand/brand-2.png" alt="">
-                </div>
-             </div>
-             <div class="brand-item wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
-                <div class="tp-brand-icon">
-                   <img src="assets/img/brand/brand-1.png" alt="">
-                </div>
-             </div>
-             <div class="brand-item wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s">
-                <div class="tp-brand-icon">
-                   <img src="assets/img/brand/brand-4.png" alt="">
-                </div>
-             </div>
-             <div class="brand-item wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                <div class="tp-brand-icon">
-                   <img src="assets/img/brand/brand-5.png" alt="">
-                </div>
-             </div>
-             <div class="brand-item wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                <div class="tp-brand-icon">
-                   <img src="assets/img/brand/brand-6.png" alt="">
-                </div>
-             </div>
-             <div class="brand-item wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
-                <div class="tp-brand-icon">
-                   <img src="assets/img/brand/brand-6.png" alt="">
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-barnd-area-end -->
-
-    <!-- tp-blog-area-start -->
-    <div class="tp-blog-area blog-grident-bg blog-space" data-background="assets/img/blog/blog-gridient-shape.png">
-       <div class="container">
-          <div class="row justify-content-center">
-             <div class="col-xl-6">
-                <div class="tp-blog-section-title-box text-center mb-60">
-                   <h4 class="tp-section-subtitle tp-green-color">Our Blog Article</h4>
-                   <h3 class="tp-section-title">Read our Latest stories </h3>
-                </div>
-             </div>
-             <div class="row gx-20">
-                <div class="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".4s">
-                   <div class="tp-blog-item mb-30">
-                      <div class="tp-blog-item__thumb fix">
-                         <a href="blog-details.html"><img src="assets/img/blog/blog-1.jpg" alt=""></a>
-                      </div>
-                      <div class="tp-blog-item__tag">
-                         <span>Tutorials</span>
-                         <span class="tag-color-green">February. 20.2022</span>
-                      </div>
-                      <div class="tp-blog-item__blog-title">
-                         <h4 class="tp-blog-title-lg"><a href="blog-details.html">How to Increase Your ROI Through scientific SEM?</a>
-                         </h4>
-                      </div>
-                      <div class="tp-blog-item__button">
-                         <div class="tp-link tp-link-green">
-                            <a href="blog-details.html">
-                               <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                     d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                     fill="#202026" />
-                               </svg>
-                               <span>Read MORe</span>
-                            </a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".7s" data-wow-delay=".7s">
-                   <div class="tp-blog-item mb-30">
-                      <div class="tp-blog-item__thumb fix">
-                         <a href="blog-details.html"><img src="assets/img/blog/blog-2.jpg" alt=""></a>
-                      </div>
-                      <div class="tp-blog-item__tag">
-                         <span>Design</span>
-                         <span class="tag-color-green">February. 20.2022</span>
-                      </div>
-                      <div class="tp-blog-item__blog-title">
-                         <h4 class="tp-blog-title-lg"><a href="blog-details.html">ECommerce Marketing Statistics You Should Kno</a></h4>
-                      </div>
-                      <div class="tp-blog-item__button">
-                         <div class="tp-link tp-link-green">
-                            <a href="blog-details.html">
-                               <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                     d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                     fill="#202026" />
-                               </svg>
-                               <span>Read MORe</span>
-                            </a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-blog-area-end -->
-
-    <!-- tp-social-area-start -->
-    <div class="tp-social-area social-space-bottom fix">
-       <div class="container-fluid p-0">
-          <div class="row g-0">
-             <div class="col-lg-2 col-md-4 col-sm-6">
-                <a href="#">
-                   <div class="tp-social-item">
-                      <span><i class="fab fa-facebook-f"></i> Facebook</span>
-                   </div>
-                </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-                <a href="#">
-                   <div class="tp-social-item tp-youtube">
-                      <span><i class="fab fa-youtube"></i> youtube</span>
-                   </div>
-                </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-               <a href="#">
-                   <div class="tp-social-item tp-behance">
-                      <span><i class="fab fa-behance"></i> behance</span>
-                   </div>
-               </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-                <a href="#">
-                   <div class="tp-social-item tp-dribble">
-                      <span><i class="fab fa-dribbble"></i> dribbble</span>
-                   </div>
-                </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-                <a href="#">
-                   <div class="tp-social-item tp-twitter">
-                      <span><i class="fab fa-twitter"></i> twitter</span>
-                   </div>
-                </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-               <a href="#">
-                   <div class="tp-social-item tp-linkedin">
-                      <span><i class="fab fa-linkedin"></i>linkedin</span>
-                   </div>
-               </a>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-social-area-end -->
- </main>
+<div id="page" class="page">
+   <div class="overflow-hidden post-118 page type-page status-publish hentry entry">
+      <div data-elementor-type="wp-page" data-elementor-id="118" class="elementor elementor-118">
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-15ca947 elementor-section-content-middle hero-section color--white elementor-section-boxed elementor-section-height-default elementor-section-height-default hero-1" data-id="15ca947" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fb36b84 wow fadeInRight" data-id="fb36b84" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="txt-block elementor-element elementor-element-4731846 elementor-widget elementor-widget-content-text" data-id="4731846" data-element_type="widget" data-widget_type="content-text.default">
+                        <div class="elementor-widget-container">
+                           <h2 class="title-element s-58 w-700 mb-4">Content is the key to building an audience</h2>
+                           <p class="subtitle-element p-xl">Mauris donec turpis suscipit sapien ociis sagittis sapien tempor a volute ligula and aliquet tortor </p>
+                           <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"><a href="#" class="btn r-04 btn--theme hover--tra-white">Get started for free</a></div>
+                           <p>No credit card needed, free 14-day trial</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bf8eaac wow fadeInLeft" data-id="bf8eaac" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="hero-1-img elementor-element elementor-element-d914efa elementor-widget elementor-widget-content-image" data-id="d914efa" data-element_type="widget" data-widget_type="content-image.default">
+                        <div class="elementor-widget-container">
+                           <img fetchpriority="high" decoding="async" width="795" height="975" src="wp-content/uploads/2023/07/hero-1-img.png" class="attachment-large size-large wp-image-130 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/hero-1-img.png 795w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/hero-1-img-600x736.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/hero-1-img-245x300.png 245w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/hero-1-img-768x942.png 768w" sizes="(max-width: 795px) 100vw, 795px" style="width:100%;height:122.64%;max-width:795px" />																			
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-e187736 features-section features-6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e187736" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d7370d5" data-id="d7370d5" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-b4206a0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b4206a0" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2162e25" data-id="2162e25" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-9f469a8" data-id="9f469a8" data-element_type="column">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="section-title mb-70 elementor-element elementor-element-cf31a0a elementor-widget elementor-widget-section_title" data-id="cf31a0a" data-element_type="widget" data-widget_type="section_title.default">
+                                    <div class="elementor-widget-container">
+                                       <h2 class="title-element s-46">Build a customer-centric marketing strategy</h2>
+                                       <p class="description-element s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ce8fbbd" data-id="ce8fbbd" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <div class="elementor-element elementor-element-5db6718 elementor-widget elementor-widget-martex_features" data-id="5db6718" data-element_type="widget" data-widget_type="martex_features.default">
+                        <div class="elementor-widget-container">
+                           <!-- FEATURES-6 WRAPPER -->
+                           <div class="fbox-wrapper">
+                              <div class="row row-cols-1 row-cols-md-4">
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ico-55">
+                                          <div class="shape-ico color--theme">
+                                             <div class="tab-link-ico">
+                                                <span class="flaticon-graphics"></span>
+                                             </div>
+                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Market Research</h6>
+                                          <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ico-55">
+                                          <div class="shape-ico color--theme">
+                                             <div class="tab-link-ico">
+                                                <span class="flaticon-idea"></span>
+                                             </div>
+                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">User Experience</h6>
+                                          <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ico-55">
+                                          <div class="shape-ico color--theme">
+                                             <div class="tab-link-ico">
+                                                <span class="flaticon-graphic"></span>
+                                             </div>
+                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Digital Marketing</h6>
+                                          <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ico-55">
+                                          <div class="shape-ico color--theme">
+                                             <div class="tab-link-ico">
+                                                <span class="flaticon-search-engine-1"></span>
+                                             </div>
+                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">SEO Services</h6>
+                                          <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                              </div>
+                              <!-- End row -->
+                           </div>
+                           <!-- END FEATURES-6 WRAPPER -->		
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-395da3e elementor-section-full_width elementor-section-height-min-height elementor-section-content-middle elementor-section-height-default elementor-section-items-middle" data-id="395da3e" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-no">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2e49f33" data-id="2e49f33" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-ecc2e39 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="ecc2e39" data-element_type="widget" data-widget_type="divider.default">
+                        <div class="elementor-widget-container">
+                           <style>/*! elementor - v3.18.0 - 04-12-2023 */
+                              .elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}
+                           </style>
+                           <div class="elementor-divider">
+                              <span class="elementor-divider-separator">
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-cbf7fc6 elementor-section-content-middle content-section elementor-section-boxed elementor-section-height-default elementor-section-height-default content-1" data-id="cbf7fc6" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-67fdb29 wow fadeInRight" data-id="67fdb29" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="img-block elementor-element elementor-element-1f9a4fb elementor-widget elementor-widget-content-image" data-id="1f9a4fb" data-element_type="widget" data-widget_type="content-image.default">
+                        <div class="elementor-widget-container">
+                           <img decoding="async" width="615" height="715" src="wp-content/uploads/2023/07/img-10.png" class="attachment-large size-large wp-image-151 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-10.png 615w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-10-600x698.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-10-258x300.png 258w" sizes="(max-width: 615px) 100vw, 615px" style="width:100%;height:116.26%;max-width:615px" />																			
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a6d5dca wow fadeInLeft" data-id="a6d5dca" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="txt-block elementor-element elementor-element-ccccc4a elementor-widget elementor-widget-content-text" data-id="ccccc4a" data-element_type="widget" data-widget_type="content-text.default">
+                        <div class="elementor-widget-container">
+                           <span class="name-element section-id">Enhance Engagement</span>
+                           <h2 class="title-element s-46 w-700">Engage your most valuable visitors</h2>
+                           <p class="subtitle-element default">Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque auctor turpis vitae dolor luctus placerat magna and ligula cursus purus vitae purus an ipsum suscipit </p>
+                           <h5 class="s-24 w-700"><strong>Digits that define growth</strong></h5>
+                           <ul class="simple-list">
+                              <li class="list-item">Sapien quaerat tempor an ipsum laoreet purus and sapien dolor an ultrice ipsum aliquam undo congue cursus dolor</li>
+                              <li class="list-item">
+                                 <p class="mb-0">Purus suscipit cursus vitae cubilia magnis volute egestas vitae sapien turpis ultrice auctor congue magna placerat</p>
+                              </li>
+                           </ul>
+                           <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-6ddad01 elementor-section-content-middle content-section elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default content-1" data-id="6ddad01" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b56370b wow fadeInRight" data-id="b56370b" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="txt-block elementor-element elementor-element-bb9bdc6 elementor-widget elementor-widget-content-text" data-id="bb9bdc6" data-element_type="widget" data-widget_type="content-text.default">
+                        <div class="elementor-widget-container">
+                           <h5 class="title-element s-24 w-700  ">Solution that grows with you</h5>
+                           <p class="subtitle-element default default">Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque auctor turpis vitae dolor luctus placerat magna and ligula cursus purus vitae purus an ipsum suscipit </p>
+                           <h5 class="s-24 w-700">Connect your data sources</h5>
+                           <p>Tempor sapien sodales quaerat ipsum undo congue laoreet turpis neque auctor turpis vitae dolor luctus placerat magna and ligula cursus purus an ipsum vitae suscipit purus</p>
+                           <ul class="simple-list">
+                              <li class="list-item">Tempor sapien quaerat an ipsum laoreet purus and sapien dolor an ultrice ipsum aliquam undo congue dolor cursus</li>
+                              <li class="list-item">
+                                 <p class="mb-0">Cursus purus suscipit vitae cubilia magnis volute egestas vitae sapien turpis ultrice auctor congue magna placerat</p>
+                              </li>
+                           </ul>
+                           <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-40e0522 wow fadeInLeft" data-id="40e0522" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="img-block elementor-element elementor-element-7c18c6e elementor-widget elementor-widget-content-image" data-id="7c18c6e" data-element_type="widget" data-widget_type="content-image.default">
+                        <div class="elementor-widget-container">
+                           <img decoding="async" width="675" height="765" src="wp-content/uploads/2023/07/img-06.png" class="attachment-large size-large wp-image-178 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-06.png 675w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-06-600x680.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-06-265x300.png 265w" sizes="(max-width: 675px) 100vw, 675px" style="width:100%;height:113.33%;max-width:675px" />																			
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-170455b features-section features-5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="170455b" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9160c10" data-id="9160c10" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-ba295c4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ba295c4" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4ad88f5" data-id="4ad88f5" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3280fc3" data-id="3280fc3" data-element_type="column">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="section-title mb-70 elementor-element elementor-element-3263de5 elementor-widget elementor-widget-section_title" data-id="3263de5" data-element_type="widget" data-widget_type="section_title.default">
+                                    <div class="elementor-widget-container">
+                                       <h2 class="title-element s-46">Reach your audience through social media marketing</h2>
+                                       <p class="description-element s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1ebc453" data-id="1ebc453" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <div class="elementor-element elementor-element-29c45e3 wow fadeInUp elementor-widget elementor-widget-martex_features" data-id="29c45e3" data-element_type="widget" data-widget_type="martex_features.default">
+                        <div class="elementor-widget-container">
+                           <!-- FEATURES-6 WRAPPER -->
+                           <div class="fbox-wrapper">
+                              <div class="row d-flex align-items-center justify-content-center">
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col-md-6 text-center">
+                                    <div class="fbox-5 mb-30 fb-1 bg--white-400 r-16">
+                                       <!-- Text -->
+                                       <div class="fbox-txt order-last order-md-2">
+                                          <h5 class="s-26 w-700">Market Research</h5>
+                                          <p>Aliquam a augue suscipit luctus diam neque purus ipsum neque and dolor primis libero</p>
+                                       </div>
+                                       <!-- image -->
+                                       <div class="fbox-5-img order-first order-md-2">
+                                          <img decoding="async" class="img-fluid light-theme-img" src="wp-content/uploads/2023/07/f_06.png" alt="Market Research">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col-md-6 text-center">
+                                    <div class="fbox-5 mb-30 fb-2 bg--white-400 r-16">
+                                       <!-- Image -->
+                                       <div class="fbox-5-img">
+                                          <img decoding="async" class="img-fluid light-theme-img" src="wp-content/uploads/2023/08/f_04.png" alt="Enhance Engagement">
+                                       </div>
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h5 class="s-26 w-700">Enhance Engagement</h5>
+                                          <p>Aliquam a augue suscipit luctus diam neque purus ipsum neque and dolor primis libero</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                              </div>
+                           </div>
+                           <!-- END FEATURES-6 WRAPPER -->		
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-3e2d6dd elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3e2d6dd" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-no">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0c08852" data-id="0c08852" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-f97fdb2 elementor-widget elementor-widget-statistics" data-id="f97fdb2" data-element_type="widget" data-widget_type="statistics.default">
+                        <div class="elementor-widget-container">
+                           <!-- STATISTIC-1
+                              ============================================= -->
+                           <div id="statistic-1" class="py-100 statistic-section division">
+                              <div class="container">
+                                 <!-- STATISTIC-1 WRAPPER -->
+                                 <div class="statistic-1-wrapper">
+                                    <div class="row justify-content-md-center row-cols-1 row-cols-md-3">
+                                       <!-- STATISTIC BLOCK #1 -->
+                                       <div class="col">
+                                          <div id="sb-1-1">
+                                             <div class="statistic-block">
+                                                <!-- Digit -->
+                                                <div class="statistic-block-digit text-center">
+                                                   <h2 class="s-46 statistic-number">
+                                                      <span class="count-element">89</span>k                                        
+                                                   </h2>
+                                                </div>
+                                                <!-- statistic Text -->
+                                                <div class="statistic-block-txt color--grey">
+                                                   <p class="p-md"> Porta justo integer and velna vitae auctor</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- END STATISTIC BLOCK #1 -->
+                                       <!-- STATISTIC BLOCK #1 -->
+                                       <div class="col">
+                                          <div id="sb-1-1">
+                                             <div class="statistic-block">
+                                                <!-- Digit -->
+                                                <div class="statistic-block-digit text-center">
+                                                   <h2 class="s-46 statistic-number">
+                                                      <span class="count-element">76</span>%                                        
+                                                   </h2>
+                                                </div>
+                                                <!-- statistic Text -->
+                                                <div class="statistic-block-txt color--grey">
+                                                   <p class="p-md"> Ligula magna suscipit vitae and rutrum </p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- END STATISTIC BLOCK #1 -->
+                                       <!-- STATISTIC BLOCK #1 -->
+                                       <div class="col">
+                                          <div id="sb-1-1">
+                                             <div class="statistic-block">
+                                                <!-- Digit -->
+                                                <div class="statistic-block-digit text-center">
+                                                   <h2 class="s-46 statistic-number">
+                                                      <span class="count-element">4</span>.                                            <span class="count-element">5</span>k                                        
+                                                   </h2>
+                                                </div>
+                                                <!-- statistic Text -->
+                                                <div class="statistic-block-txt color--grey">
+                                                   <p class="p-md"> Sagittis congue augue egestas an egestas </p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- END STATISTIC BLOCK #1 -->
+                                    </div>
+                                    <!-- End row -->
+                                 </div>
+                                 <!-- END STATISTIC-1 WRAPPER -->
+                              </div>
+                              <!-- End container -->
+                           </div>
+                           <!-- END STATISTIC-1 -->
+                           <!-- DIVIDER LINE -->
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-cd54a7d elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="cd54a7d" data-element_type="widget" data-widget_type="divider.default">
+                        <div class="elementor-widget-container">
+                           <div class="elementor-divider">
+                              <span class="elementor-divider-separator">
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-432d585 elementor-section-content-middle content-section elementor-section-boxed elementor-section-height-default elementor-section-height-default content-1" data-id="432d585" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-526c1e6 wow fadeInRight" data-id="526c1e6" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="img-block elementor-element elementor-element-0066fc7 elementor-widget elementor-widget-content-image" data-id="0066fc7" data-element_type="widget" data-widget_type="content-image.default">
+                        <div class="elementor-widget-container">
+                           <img loading="lazy" decoding="async" width="665" height="720" src="wp-content/uploads/2023/07/img-03.png" class="attachment-large size-large wp-image-185 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-03.png 665w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-03-600x650.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-03-277x300.png 277w" sizes="(max-width: 665px) 100vw, 665px" style="width:100%;height:108.27%;max-width:665px" />																			
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-37ce3ea wow fadeInLeft" data-id="37ce3ea" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="txt-block elementor-element elementor-element-08eca04 elementor-widget elementor-widget-content-text" data-id="08eca04" data-element_type="widget" data-widget_type="content-text.default">
+                        <div class="elementor-widget-container">
+                           <h5 class="title-element s-24 w-700">The smarter way to work</h5>
+                           <p class="subtitle-element default mb-4">Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque auctor turpis vitae dolor luctus placerat magna and ligula cursus purus vitae purus an ipsum suscipit </p>
+                           <h5 class="s-24 w-700">Full access to all features</h5>
+                           <ul class="simple-list">
+                              <li class="list-item">Cursus purus suscipit vitae cubilia magnis volute egestas vitae sapien turpis sodales magna undo aoreet primis</li>
+                              <li class="list-item">
+                                 <p class="mb-0">Tempor sapien quaerat an ipsum laoreet purus and sapien dolor an ultrice ipsum aliquam undo congue dolor cursus purus congue and ipsum purus sapien a blandit</p>
+                              </li>
+                           </ul>
+                           <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"><a href="#" class="btn r-04 btn--tra-black hover--theme">What&#039;s possible?</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-8b8f427 elementor-section-content-middle features-section features-12 left shape--bg  shape--white-500 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8b8f427" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c101cec wow fadeInRight" data-id="c101cec" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="txt-block elementor-element elementor-element-754e01b elementor-widget elementor-widget-content-text" data-id="754e01b" data-element_type="widget" data-widget_type="content-text.default">
+                        <div class="elementor-widget-container">
+                           <span class="name-element section-id">One-Stop Solution</span>
+                           <h2 class="title-element s-46 w-700">Smart solutions, real-time results</h2>
+                           <p class="subtitle-element default">Sodales tempor sapien quaerat ipsum and congue undo laoreet turpis neque auctor turpis vitae dolor luctus placerat magna ligula and cursus vitae </p>
+                           <div class="cbox-1 ico-15">
+                              <div class="cbox-1-txt">
+                                 <p>Magna dolor luctus at egestas sapien</p>
+                              </div>
+                           </div>
+                           <div class="cbox-1 ico-15">
+                              <div class="ico-wrap color--theme">
+                                 <div class="cbox-1-ico"> </div>
+                              </div>
+                              <div class="cbox-1-txt">
+                                 <p>Cursus purus suscipit vitae cubilia magnis volute egestas vitae sapien turpis and ultrice magnis</p>
+                              </div>
+                           </div>
+                           <div class="cbox-1 ico-15">
+                              <div class="ico-wrap color--theme">
+                                 <div class="cbox-1-ico"> </div>
+                              </div>
+                              <div class="cbox-1-txt">
+                                 <p class="mb-0">Volute turpis dolores and sagittis congue</p>
+                              </div>
+                           </div>
+                           <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-566f886 wow fadeInLeft" data-id="566f886" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-db74e24 elementor-widget elementor-widget-martex_features" data-id="db74e24" data-element_type="widget" data-widget_type="martex_features.default">
+                        <div class="elementor-widget-container">
+                           <!-- FEATURES-6 WRAPPER -->
+                           <div class="fbox-wrapper">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <!-- FEATURE BOX #1 -->
+                                    <div class="fbox-12 bg--white-100 block-shadow r-12 mb-30">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ico-50">
+                                          <div class="shape-ico color--theme">
+                                             <span class="flaticon-graphics"></span>
+                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h5 class="s-19 w-700">Market Research</h5>
+                                          <p>Luctus augue egestas undo ultrice and quisque lacus Luctus augue egestas  </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <!-- FEATURE BOX #1 -->
+                                    <div class="fbox-12 bg--white-100 block-shadow r-12 mb-30">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ico-50">
+                                          <div class="shape-ico color--theme">
+                                             <span class="flaticon-idea"></span>
+                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h5 class="s-19 w-700">User Experience</h5>
+                                          <p>Luctus augue egestas undo ultrice and quisque lacus Luctus augue egestas  </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <!-- FEATURE BOX #1 -->
+                                    <div class="fbox-12 bg--white-100 block-shadow r-12 mb-30">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ico-50">
+                                          <div class="shape-ico color--theme">
+                                             <span class="flaticon-graphic"></span>
+                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h5 class="s-19 w-700">Digital Marketing</h5>
+                                          <p>Luctus augue egestas undo ultrice and quisque lacus Luctus augue egestas  </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <!-- FEATURE BOX #1 -->
+                                    <div class="fbox-12 bg--white-100 block-shadow r-12 mb-30">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ico-50">
+                                          <div class="shape-ico color--theme">
+                                             <span class="flaticon-search-engine-1"></span>
+                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h5 class="s-19 w-700">SEO Services</h5>
+                                          <p>Luctus augue egestas undo ultrice and quisque lacus Luctus augue egestas  </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- END FEATURES-6 WRAPPER -->		
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-4f9484e elementor-section-content-middle content-section elementor-section-boxed elementor-section-height-default elementor-section-height-default content-1" data-id="4f9484e" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5bbadd5 wow fadeInRight" data-id="5bbadd5" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="img-block elementor-element elementor-element-ee7e113 elementor-widget elementor-widget-content-image" data-id="ee7e113" data-element_type="widget" data-widget_type="content-image.default">
+                        <div class="elementor-widget-container">
+                           <img loading="lazy" decoding="async" width="615" height="530" src="wp-content/uploads/2023/07/img-02.png" class="attachment-large size-large wp-image-202 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-02.png 615w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-02-600x517.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-02-300x259.png 300w" sizes="(max-width: 615px) 100vw, 615px" style="width:100%;height:86.18%;max-width:615px" />																			
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-84f2383 wow fadeInLeft" data-id="84f2383" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="txt-block elementor-element elementor-element-72fb98e elementor-widget elementor-widget-content-text" data-id="72fb98e" data-element_type="widget" data-widget_type="content-text.default">
+                        <div class="elementor-widget-container">
+                           <span class="name-element section-id">Easy Integration</span>
+                           <h2 class="title-element s-46 w-700  ">Plug your essential tools in few clicks</h2>
+                           <ul class="simple-list">
+                              <li class="list-item">
+                                 <p>Cursus purus suscipit vitae cubilia magnis volute egestas vitae sapien turpis sodales magna undo aoreet primis</p>
+                              </li>
+                              <li class="list-item">
+                                 <p class="mb-0">Tempor sapien quaerat an ipsum laoreet purus and sapien dolor an ultrice ipsum aliquam undo congue dolor cursus purus congue and ipsum purus sapien a blandit</p>
+                              </li>
+                           </ul>
+                           <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-c43726a elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c43726a" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-no">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-80a21bb" data-id="80a21bb" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-2bf6b39 elementor-widget elementor-widget-video_popup" data-id="2bf6b39" data-element_type="widget" data-widget_type="video_popup.default">
+                        <div class="elementor-widget-container">
+                           <!--  IMAGE CONTENT -->
+                           <section id="lnk-3" class="ct-10  bg--04  content-section division" style="--martex-video-popup-bg-04:url(wp-content/themes/martex/assets/images/bg-04.jpg)">
+                              <div class="section-overlay pt-100 pb-0 r-16">
+                                 <div class="container">
+                                    <!-- SECTION TITLE -->
+                                    <div class="row justify-content-center">
+                                       <div class="col-md-10 col-lg-9">
+                                          <div class="section-title mb-70">
+                                             <!-- Title -->
+                                             <h2 class="s-50 w-700">Track the progress towards objectives with key results</h2>
+                                             <!-- Text -->
+                                             <p class="s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- IMAGE BLOCK -->
+                                    <div class="row justify-content-center">
+                                       <div class="col">
+                                          <div class=" img-block video-preview">
+                                             <!-- Play Icon -->
+                                             <a class="video-popup2" href="https://www.youtube.com/watch?v=7e90gBu4pas">
+                                                <div class="video-btn video-btn-xl bg--theme">
+                                                   <div class="video-block-wrapper"><span class="flaticon-play-button"></span>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                             <!-- Preview Image -->
+                                             <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/dashboard-01.png" alt="Track the progress towards objectives with key results">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- row -->
+                                 </div>
+                                 <!-- End container -->
+                              </div>
+                              <!-- End section overlay -->
+                           </section>
+                           <!-- END IMAGE CONTENT -->		
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-757086a elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="757086a" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-14a7a36" data-id="14a7a36" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-b0d6670 elementor-widget elementor-widget-brand" data-id="b0d6670" data-element_type="widget" data-widget_type="brand.default">
+                        <div class="elementor-widget-container">
+                           <div id="brands-1" class="pt-80 pb-100 brands-section">
+                              <div class="container">
+                                 <!-- BRANDS TITLE -->
+                                 <div class="row justify-content-center">
+                                    <div class="col-md-10 col-lg-9">
+                                       <div class="brands-title mb-50">
+                                          <h5 class="s-18">Martex is loved and trusted by thousands</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- BRANDS CAROUSEL -->
+                                 <div class="row">
+                                    <div class="col text-center">
+                                       <div class="owl-carousel brands-carousel-5">
+                                          <!-- BRAND LOGO IMAGE -->
+                                          <div class="brand-logo">
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/brand-1.png" alt="">
+                                             </a>
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid dark-theme-img" src="wp-content/themes/martex/assets/images/brand-1-white.png" alt="">
+                                             </a>
+                                          </div>
+                                          <div class="brand-logo">
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/brand-2.png" alt="">
+                                             </a>
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid dark-theme-img" src="wp-content/themes/martex/assets/images/brand-3-white.png" alt="">
+                                             </a>
+                                          </div>
+                                          <div class="brand-logo">
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/brand-3.png" alt="">
+                                             </a>
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid dark-theme-img" src="wp-content/themes/martex/assets/images/brand-7-white.png" alt="">
+                                             </a>
+                                          </div>
+                                          <div class="brand-logo">
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/brand-4.png" alt="">
+                                             </a>
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid dark-theme-img" src="wp-content/themes/martex/assets/images/brand-4-white.png" alt="">
+                                             </a>
+                                          </div>
+                                          <div class="brand-logo">
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/brand-5.png" alt="">
+                                             </a>
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid dark-theme-img" src="wp-content/themes/martex/assets/images/brand-5-white.png" alt="">
+                                             </a>
+                                          </div>
+                                          <div class="brand-logo">
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/brand-6.png" alt="">
+                                             </a>
+                                             <a href="#">
+                                             <img decoding="async" class="img-fluid dark-theme-img" src="wp-content/themes/martex/assets/images/brand-6-white.png" alt="">
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END BRANDS CAROUSEL -->
+                              </div>
+                              <!-- End container -->
+                           </div>
+                           <!-- END BRANDS-1 -->
+                           <!-- DIVIDER LINE -->
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-d60f981 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="d60f981" data-element_type="widget" data-widget_type="divider.default">
+                        <div class="elementor-widget-container">
+                           <div class="elementor-divider">
+                              <span class="elementor-divider-separator">
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-374efa3 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="374efa3" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d40e109" data-id="d40e109" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-f7a661a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f7a661a" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-9baaf1b" data-id="9baaf1b" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-fbf12e0" data-id="fbf12e0" data-element_type="column">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="section-title mb-70 elementor-element elementor-element-f72f424 elementor-widget elementor-widget-section_title" data-id="f72f424" data-element_type="widget" data-widget_type="section_title.default">
+                                    <div class="elementor-widget-container">
+                                       <h2 class="title-element s-46">The Complete Solutions</h2>
+                                       <p class="description-element s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f35fe21" data-id="f35fe21" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <div class="elementor-element elementor-element-bce650f wow fadeInUp elementor-widget elementor-widget-martex_features" data-id="bce650f" data-element_type="widget" data-widget_type="martex_features.default">
+                        <div class="elementor-widget-container">
+                           <!-- FEATURES-6 WRAPPER -->
+                           <div class="fbox-wrapper">
+                              <div class="row row-cols-1 row-cols-md-3">
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <div class="fbox-img gr--whitesmoke h-175">
+                                          <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/f_01.png" alt="Intuitive Dashboard">
+                                          <!-- <img decoding="async" class="img-fluid dark-theme-img" src="images/f_04_dark.png" alt="feature-image"> -->
+                                       </div>
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Intuitive Dashboard</h6>
+                                          <p>Luctus egestas augue undo ultrice aliquam in lacus congue dapibus</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <div class="fbox-img gr--whitesmoke h-175">
+                                          <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/f_05.png" alt="Effortless Integration">
+                                          <!-- <img decoding="async" class="img-fluid dark-theme-img" src="images/f_04_dark.png" alt="feature-image"> -->
+                                       </div>
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Effortless Integration</h6>
+                                          <p>Luctus egestas augue undo ultrice aliquam in lacus congue dapibus</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <div class="fbox-img gr--whitesmoke h-175">
+                                          <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/f_02.png" alt="Digital Marketing">
+                                          <!-- <img decoding="async" class="img-fluid dark-theme-img" src="images/f_04_dark.png" alt="feature-image"> -->
+                                       </div>
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Digital Marketing</h6>
+                                          <p>Luctus egestas augue undo ultrice aliquam in lacus congue dapibus</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                              </div>
+                              <!-- End row -->
+                           </div>
+                           <!-- END FEATURES-6 WRAPPER -->		
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-58ea454 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="58ea454" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-no">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-654ab35" data-id="654ab35" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-eb59a30 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="eb59a30" data-element_type="widget" data-widget_type="divider.default">
+                        <div class="elementor-widget-container">
+                           <div class="elementor-divider">
+                              <span class="elementor-divider-separator">
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-2efa968 elementor-section-content-middle content-section elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default content-1" data-id="2efa968" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c1340d5 wow fadeInRight" data-id="c1340d5" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="txt-block elementor-element elementor-element-f296a20 elementor-widget elementor-widget-content-text" data-id="f296a20" data-element_type="widget" data-widget_type="content-text.default">
+                        <div class="elementor-widget-container">
+                           <span class="name-element section-id">Productivity Focused</span>
+                           <h2 class="title-element s-46 w-700">Achieve more with better workflows</h2>
+                           <p class="subtitle-element default">Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque auctor turpis vitae dolor luctus placerat magna and ligula cursus purus vitae purus an ipsum suscipit </p>
+                           <div class="cbox-1 ico-15">
+                              <div class="cbox-1-txt">
+                                 <p>Magna dolor luctus at egestas sapien</p>
+                              </div>
+                           </div>
+                           <div class="cbox-1 ico-15">
+                              <div class="cbox-1-txt">
+                                 <p>Cursus purus suscipit vitae cubilia magnis volute egestas vitae sapien turpis ultrice auctor congue varius magnis</p>
+                              </div>
+                           </div>
+                           <div class="cbox-1 ico-15">
+                              <div class="cbox-1-txt">
+                                 <p class="mb-0">Volute turpis dolores and sagittis congue</p>
+                              </div>
+                           </div>
+                           <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bf61c13 wow fadeInLeft" data-id="bf61c13" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="img-block elementor-element elementor-element-97940c6 elementor-widget elementor-widget-content-image" data-id="97940c6" data-element_type="widget" data-widget_type="content-image.default">
+                        <div class="elementor-widget-container">
+                           <img loading="lazy" decoding="async" width="650" height="790" src="wp-content/uploads/2023/07/img-13.png" class="attachment-large size-large wp-image-221 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-13.png 650w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-13-600x729.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-13-247x300.png 247w" sizes="(max-width: 650px) 100vw, 650px" style="width:100%;height:121.54%;max-width:650px" />																			
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-2012598 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2012598" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1ff5138" data-id="1ff5138" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-1f78bfd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1f78bfd" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2375f53" data-id="2375f53" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-25b9006" data-id="25b9006" data-element_type="column">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="section-title mb-70 elementor-element elementor-element-ed5684b elementor-widget elementor-widget-section_title" data-id="ed5684b" data-element_type="widget" data-widget_type="section_title.default">
+                                    <div class="elementor-widget-container">
+                                       <h2 class="title-element s-46">Discover insights across all your data with Martex</h2>
+                                       <p class="description-element s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d140f15" data-id="d140f15" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-b69bbef elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b69bbef" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-dbfb5a1" data-id="dbfb5a1" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-38f1a2b wow fadeInUp" data-id="38f1a2b" data-element_type="column">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="elementor-element elementor-element-7100191 elementor-widget elementor-widget-image" data-id="7100191" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                       <style>/*! elementor - v3.18.0 - 04-12-2023 */
+                                          .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}
+                                       </style>
+                                       <img loading="lazy" decoding="async" width="1015" height="390" src="wp-content/uploads/2023/07/img-19.png" class="attachment-large size-large wp-image-231 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19.png 1015w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19-600x231.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19-300x115.png 300w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19-768x295.png 768w" sizes="(max-width: 1015px) 100vw, 1015px" style="width:100%;height:38.42%;max-width:1015px" />															
+                                    </div>
+                                 </div>
+                                 <div class="elementor-element elementor-element-6b29a3c elementor-widget elementor-widget-buttons" data-id="6b29a3c" data-element_type="widget" data-widget_type="buttons.default">
+                                    <div class="elementor-widget-container">
+                                       <div class="button-alignment">
+                                          <div class="btns-group">
+                                             <a href="#" class="btn icon-20 r-04 btn--tra-black hover--theme">Monitor your activity                                            </a>
+                                          </div>
+                                          <p class="p-sm btns-group-txt">
+                                          <ul class="advantages ico-15 clearfix">
+                                             <li>
+                                                <p>Free 14 days trial</p>
+                                             </li>
+                                             <li class="advantages-links-divider">
+                                                <p> </p>
+                                             </li>
+                                             <li>
+                                                <p>Exclusive Support</p>
+                                             </li>
+                                             <li class="advantages-links-divider">
+                                                <p> </p>
+                                             </li>
+                                             <li>
+                                                <p>No Fees</p>
+                                             </li>
+                                          </ul>
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d4ebf99" data-id="d4ebf99" data-element_type="column">
+                              <div class="elementor-widget-wrap">
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-904f041 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="904f041" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-baa1d67 wow fadeInRight" data-id="baa1d67" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="img-block elementor-element elementor-element-13f1852 elementor-widget elementor-widget-content-image" data-id="13f1852" data-element_type="widget" data-widget_type="content-image.default">
+                        <div class="elementor-widget-container">
+                           <img loading="lazy" decoding="async" width="645" height="840" src="wp-content/uploads/2023/07/img-09.png" class="attachment-large size-large wp-image-588 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-09.png 645w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-09-600x781.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-09-230x300.png 230w" sizes="(max-width: 645px) 100vw, 645px" style="width:100%;height:130.23%;max-width:645px" />																			
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-004b727 wow fadeInLeft" data-id="004b727" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-25a554d elementor-widget elementor-widget-process-step" data-id="25a554d" data-element_type="widget" data-widget_type="process-step.default">
+                        <div class="elementor-widget-container">
+                           <div class="cbox-2 process-step">
+                              <!-- Icon -->
+                              <div class="ico-wrap">
+                                 <div class="cbox-2-ico bg--theme color--white">1</div>
+                                 <span class="cbox-2-line"></span>
+                              </div>
+                              <!-- Text -->
+                              <div class="cbox-2-txt">
+                                 <h5 class="s-22 w-700">Register in 30 seconds</h5>
+                                 <p>Ligula risus auctor tempus feugiat dolor lacinia nemo purus in lipsum purus sapien quaerat a primis viverra 													tellus vitae luctus dolor ipsum neque ligula quaerat </p>
+                              </div>
+                           </div>
+                           <!-- END CONTENT BOX #1 -->
+                           <div class="cbox-2 process-step">
+                              <!-- Icon -->
+                              <div class="ico-wrap">
+                                 <div class="cbox-2-ico bg--theme color--white">2</div>
+                                 <span class="cbox-2-line"></span>
+                              </div>
+                              <!-- Text -->
+                              <div class="cbox-2-txt">
+                                 <h5 class="s-22 w-700">Customizable Dashboards</h5>
+                                 <p>Ligula risus auctor tempus feugiat dolor lacinia nemo purus in lipsum purus sapien quaerat a primis viverra 													tellus vitae luctus dolor ipsum neque ligula quaerat </p>
+                              </div>
+                           </div>
+                           <!-- END CONTENT BOX #1 -->
+                           <div class="cbox-2 process-step">
+                              <!-- Icon -->
+                              <div class="ico-wrap">
+                                 <div class="cbox-2-ico bg--theme color--white">3</div>
+                              </div>
+                              <!-- Text -->
+                              <div class="cbox-2-txt">
+                                 <h5 class="s-22 w-700">Improved Productivity</h5>
+                                 <p>Ligula risus auctor tempus feugiat dolor lacinia nemo purus in lipsum purus sapien quaerat a primis viverra 													tellus vitae luctus dolor ipsum neque ligula quaerat </p>
+                              </div>
+                           </div>
+                           <!-- END CONTENT BOX #1 -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-b753935 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b753935" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-no">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ef13afa" data-id="ef13afa" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-e8d681d elementor-widget elementor-widget-martex_review" data-id="e8d681d" data-element_type="widget" data-widget_type="martex_review.default">
+                        <div class="elementor-widget-container">
+                           <!-- TESTIMONIALS-1
+                              ============================================= -->
+                           <section id="reviews-1" class="pt-100 shape--06 shape--gr-whitesmoke reviews-section">
+                              <div class="container">
+                                 <!-- SECTION TITLE -->
+                                 <div class="row justify-content-center">
+                                    <div class="col-md-10 col-lg-9">
+                                       <div class="section-title mb-70">
+                                          <!-- Title -->
+                                          <h2 class="s-50 w-700">Here’s what our amazing clients are saying</h2>
+                                          <!-- Text -->
+                                          <p class="s-21 color--grey">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- TESTIMONIALS CONTENT -->
+                                 <div class="row">
+                                    <div class="col">
+                                       <div class="owl-carousel owl-theme reviews-1-wrapper">
+                                          <!-- TESTIMONIAL #1 -->
+                                          <div class="review-1 bg--white-100 block-shadow r-08">
+                                             <!-- Quote Icon -->
+                                             <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                             <!-- Text -->
+                                             <div class="review-txt">
+                                                <!-- Text -->
+                                                <p>Augue at vitae purus tempus egestas volutpat augue undo cubilia laoreet magna suscipit luctus dolor blandit at purus tempus feugiat impedit</p>
+                                                <!-- Author -->
+                                                <div class="author-data clearfix">
+                                                   <!-- Avatar -->
+                                                   <div class="review-avatar">
+                                                      <img decoding="async" src="wp-content/themes/martex/assets/images/review-author-2.jpg" alt="Joel Peterson">
+                                                   </div>
+                                                   <!-- Data -->
+                                                   <div class="review-author">
+                                                      <h6 class="s-18 w-700">Joel Peterson</h6>
+                                                      <p class="p-sm">Internet Surfer</p>
+                                                   </div>
+                                                </div>
+                                                <!-- End Author -->
+                                             </div>
+                                             <!-- End Text -->
+                                          </div>
+                                          <!-- END TESTIMONIAL #1 -->
+                                          <!-- TESTIMONIAL #1 -->
+                                          <div class="review-1 bg--white-100 block-shadow r-08">
+                                             <!-- Quote Icon -->
+                                             <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                             <!-- Text -->
+                                             <div class="review-txt">
+                                                <!-- Text -->
+                                                <p>Augue at vitae purus tempus egestas volutpat augue undo cubilia laoreet magna suscipit luctus dolor blandit at purus tempus feugiat impedit</p>
+                                                <!-- Author -->
+                                                <div class="author-data clearfix">
+                                                   <!-- Avatar -->
+                                                   <div class="review-avatar">
+                                                      <img decoding="async" src="wp-content/themes/martex/assets/images/review-author-3.jpg" alt="Marisol19">
+                                                   </div>
+                                                   <!-- Data -->
+                                                   <div class="review-author">
+                                                      <h6 class="s-18 w-700">Marisol19</h6>
+                                                      <p class="p-sm">@marisol19</p>
+                                                   </div>
+                                                </div>
+                                                <!-- End Author -->
+                                             </div>
+                                             <!-- End Text -->
+                                          </div>
+                                          <!-- END TESTIMONIAL #1 -->
+                                          <!-- TESTIMONIAL #1 -->
+                                          <div class="review-1 bg--white-100 block-shadow r-08">
+                                             <!-- Quote Icon -->
+                                             <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                             <!-- Text -->
+                                             <div class="review-txt">
+                                                <!-- Text -->
+                                                <p>Augue at vitae purus tempus egestas volutpat augue undo cubilia laoreet magna suscipit luctus dolor blandit at purus tempus feugiat impedit</p>
+                                                <!-- Author -->
+                                                <div class="author-data clearfix">
+                                                   <!-- Avatar -->
+                                                   <div class="review-avatar">
+                                                      <img decoding="async" src="wp-content/themes/martex/assets/images/review-author-4.jpg" alt="Leslie D.">
+                                                   </div>
+                                                   <!-- Data -->
+                                                   <div class="review-author">
+                                                      <h6 class="s-18 w-700">Leslie D.</h6>
+                                                      <p class="p-sm">Web Developer</p>
+                                                   </div>
+                                                </div>
+                                                <!-- End Author -->
+                                             </div>
+                                             <!-- End Text -->
+                                          </div>
+                                          <!-- END TESTIMONIAL #1 -->
+                                          <!-- TESTIMONIAL #1 -->
+                                          <div class="review-1 bg--white-100 block-shadow r-08">
+                                             <!-- Quote Icon -->
+                                             <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                             <!-- Text -->
+                                             <div class="review-txt">
+                                                <!-- Text -->
+                                                <p>Augue at vitae purus tempus egestas volutpat augue undo cubilia laoreet magna suscipit luctus dolor blandit at purus tempus feugiat impedit</p>
+                                                <!-- Author -->
+                                                <div class="author-data clearfix">
+                                                   <!-- Avatar -->
+                                                   <div class="review-avatar">
+                                                      <img decoding="async" src="wp-content/themes/martex/assets/images/review-author-5.jpg" alt="Jennifer Harper">
+                                                   </div>
+                                                   <!-- Data -->
+                                                   <div class="review-author">
+                                                      <h6 class="s-18 w-700">Jennifer Harper</h6>
+                                                      <p class="p-sm">App Developer</p>
+                                                   </div>
+                                                </div>
+                                                <!-- End Author -->
+                                             </div>
+                                             <!-- End Text -->
+                                          </div>
+                                          <!-- END TESTIMONIAL #1 -->
+                                          <!-- TESTIMONIAL #1 -->
+                                          <div class="review-1 bg--white-100 block-shadow r-08">
+                                             <!-- Quote Icon -->
+                                             <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                             <!-- Text -->
+                                             <div class="review-txt">
+                                                <!-- Text -->
+                                                <p>Augue at vitae purus tempus egestas volutpat augue undo cubilia laoreet magna suscipit luctus dolor blandit at purus tempus feugiat impedit</p>
+                                                <!-- Author -->
+                                                <div class="author-data clearfix">
+                                                   <!-- Avatar -->
+                                                   <div class="review-avatar">
+                                                      <img decoding="async" src="wp-content/themes/martex/assets/images/review-author-6.jpg" alt="Jonathan Barnes">
+                                                   </div>
+                                                   <!-- Data -->
+                                                   <div class="review-author">
+                                                      <h6 class="s-18 w-700">Jonathan Barnes</h6>
+                                                      <p class="p-sm">JS Programmer</p>
+                                                   </div>
+                                                </div>
+                                                <!-- End Author -->
+                                             </div>
+                                             <!-- End Text -->
+                                          </div>
+                                          <!-- END TESTIMONIAL #1 -->
+                                          <!-- TESTIMONIAL #1 -->
+                                          <div class="review-1 bg--white-100 block-shadow r-08">
+                                             <!-- Quote Icon -->
+                                             <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                             <!-- Text -->
+                                             <div class="review-txt">
+                                                <!-- Text -->
+                                                <p>Augue at vitae purus tempus egestas volutpat augue undo cubilia laoreet magna suscipit luctus dolor blandit at purus tempus feugiat impedit</p>
+                                                <!-- Author -->
+                                                <div class="author-data clearfix">
+                                                   <!-- Avatar -->
+                                                   <div class="review-avatar">
+                                                      <img decoding="async" src="wp-content/themes/martex/assets/images/review-author-7.jpg" alt="Mike Harris">
+                                                   </div>
+                                                   <!-- Data -->
+                                                   <div class="review-author">
+                                                      <h6 class="s-18 w-700">Mike Harris</h6>
+                                                      <p class="p-sm">Graphic Designer</p>
+                                                   </div>
+                                                </div>
+                                                <!-- End Author -->
+                                             </div>
+                                             <!-- End Text -->
+                                          </div>
+                                          <!-- END TESTIMONIAL #1 -->
+                                          <!-- TESTIMONIAL #1 -->
+                                          <div class="review-1 bg--white-100 block-shadow r-08">
+                                             <!-- Quote Icon -->
+                                             <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                             <!-- Text -->
+                                             <div class="review-txt">
+                                                <!-- Text -->
+                                                <p>Augue at vitae purus tempus egestas volutpat augue undo cubilia laoreet magna suscipit luctus dolor blandit at purus tempus feugiat impedit</p>
+                                                <!-- Author -->
+                                                <div class="author-data clearfix">
+                                                   <!-- Avatar -->
+                                                   <div class="review-avatar">
+                                                      <img decoding="async" src="wp-content/themes/martex/assets/images/review-author-8.jpg" alt="Evelyn Martinez">
+                                                   </div>
+                                                   <!-- Data -->
+                                                   <div class="review-author">
+                                                      <h6 class="s-18 w-700">Evelyn Martinez</h6>
+                                                      <p class="p-sm">WordPress Consultant</p>
+                                                   </div>
+                                                </div>
+                                                <!-- End Author -->
+                                             </div>
+                                             <!-- End Text -->
+                                          </div>
+                                          <!-- END TESTIMONIAL #1 -->
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END TESTIMONIALS CONTENT -->
+                              </div>
+                              <!-- End container -->
+                           </section>
+                           <!-- END TESTIMONIALS-1 -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-a8b32f6 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a8b32f6" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-no">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c3cb6ff" data-id="c3cb6ff" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-eaca768 wow fadeInUp elementor-widget elementor-widget-martex_integrations" data-id="eaca768" data-element_type="widget" data-widget_type="martex_integrations.default">
+                        <div class="elementor-widget-container">
+                           <!-- INTEGRATIONS-2  -->
+                           <section id="integrations-2" class="integrations-section">
+                              <div class="container">
+                                 <!-- INTEGRATIONS-2 WRAPPER -->
+                                 <div class="integrations-2-wrapper bg--02 r-16 text-center" style=" --martex-integration-bg-02:url(wp-content/themes/martex/assets/images/bg-02.jpg)">
+                                    <!-- SECTION TITLE -->
+                                    <div class="row justify-content-center">
+                                       <div class="col-md-10 col-lg-9">
+                                          <div class="section-title mb-50">
+                                             <!-- Title -->
+                                             <h2 class="s-50 w-700">Automate your workflow with our integrations</h2>
+                                             <!-- Text -->
+                                             <p class="s-21 color--grey">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- TOOLS ROW -->
+                                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 justify-content-center">
+                                       <!-- TOOL #1 -->
+                                       <div class="col">
+                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
+                                             <!-- Logo -->
+                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
+                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-1.png" alt="Zapier">
+                                             </div>
+                                             <!-- Title -->
+                                             <h6 class="s-17 w-700">Zapier</h6>
+                                          </a>
+                                       </div>
+                                       <!-- END TOOL #1 -->
+                                       <!-- TOOL #1 -->
+                                       <div class="col">
+                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
+                                             <!-- Logo -->
+                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
+                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-2.png" alt="Google Analytics">
+                                             </div>
+                                             <!-- Title -->
+                                             <h6 class="s-17 w-700">Google Analytics</h6>
+                                          </a>
+                                       </div>
+                                       <!-- END TOOL #1 -->
+                                       <!-- TOOL #1 -->
+                                       <div class="col">
+                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
+                                             <!-- Logo -->
+                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
+                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-3.png" alt="Amplitude">
+                                             </div>
+                                             <!-- Title -->
+                                             <h6 class="s-17 w-700">Amplitude</h6>
+                                          </a>
+                                       </div>
+                                       <!-- END TOOL #1 -->
+                                       <!-- TOOL #1 -->
+                                       <div class="col">
+                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
+                                             <!-- Logo -->
+                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
+                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-4.png" alt="Hubspot">
+                                             </div>
+                                             <!-- Title -->
+                                             <h6 class="s-17 w-700">Hubspot</h6>
+                                          </a>
+                                       </div>
+                                       <!-- END TOOL #1 -->
+                                       <!-- TOOL #1 -->
+                                       <div class="col">
+                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
+                                             <!-- Logo -->
+                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
+                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-5.png" alt="MailChimp">
+                                             </div>
+                                             <!-- Title -->
+                                             <h6 class="s-17 w-700">MailChimp</h6>
+                                          </a>
+                                       </div>
+                                       <!-- END TOOL #1 -->
+                                    </div>
+                                    <!-- END TOOLS ROW -->                            <!-- MORE BUTTON -->
+                                    <div class="row">
+                                       <div class="col">
+                                          <div class="more-btn text-center mt-30">
+                                             <a href="integrations-page/index.html" class="btn btn--tra-black hover--theme">View all integrations</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END INTEGRATIONS-2 WRAPPER -->
+                              </div>
+                              <!-- End container -->
+                           </section>
+                           <!-- END INTEGRATIONS-2 -->		
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-dc089da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dc089da" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b4d1359" data-id="b4d1359" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-7f4f4b0 elementor-widget elementor-widget-martex_faq" data-id="7f4f4b0" data-element_type="widget" data-widget_type="martex_faq.default">
+                        <div class="elementor-widget-container">
+                           <!-- FAQs-3
+                              ============================================= -->
+                           <section id="faqs-3" class="pt-100 faqs-section">
+                              <div class="container">
+                                 <!-- SECTION TITLE -->
+                                 <div class="row justify-content-center">
+                                    <div class="col-md-10 col-lg-9">
+                                       <div class="section-title mb-70">
+                                          <!-- Title -->
+                                          <h2 class="s-50 w-700">Questions &amp; Answers</h2>
+                                          <!-- Text -->
+                                          <p class="s-21 color--grey">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- FAQs-3 QUESTIONS -->
+                                 <div class="faqs-3-questions">
+                                    <div class="row">
+                                       <ul class="questions-holder">
+                                          <!-- QUESTION #1 -->
+                                          <li class="question">
+                                             <!-- Question -->
+                                             <h5 class="s-22 w-700"><span>1.</span> Getting started with Martex</h5>
+                                             <!-- Answer -->
+                                             <p class="color--grey">Etiam amet mauris suscipit in odio integer congue metus and vitae arcu mollis blandit ultrice ligula egestas magna suscipit lectus magna suscipit luctus blandit and laoreet </p>
+                                          </li>
+                                          <!-- QUESTION #1 -->
+                                          <li class="question">
+                                             <!-- Question -->
+                                             <h5 class="s-22 w-700"><span>2.</span> What&quot;s inside the package?</h5>
+                                             <!-- Answer -->
+                                             <p class="color--grey">An enim nullam tempor sapien gravida donec ipsum and enim porta justo integer at velna vitae auctor integer congue undo magna laoreet augue pretium purus pretium ligula </p>
+                                          </li>
+                                          <!-- QUESTION #1 -->
+                                          <li class="question">
+                                             <!-- Question -->
+                                             <h5 class="s-22 w-700"><span>3.</span> How do I choose a plan?</h5>
+                                             <!-- Answer -->
+                                             <p class="color--grey">An enim nullam tempor sapien gravida donec ipsum and enim porta justo integer at velna vitae auctor integer congue undo magna laoreet augue pretium purus pretium ligula .</p>
+                                          </li>
+                                          <!-- QUESTION #1 -->
+                                          <li class="question">
+                                             <!-- Question -->
+                                             <h5 class="s-22 w-700"><span>4.</span> How does Martex handle my privacy?</h5>
+                                             <!-- Answer -->
+                                             <p class="color--grey">Quaerat sodales sapien euismod blandit purus a purus ipsum primis in cubilia laoreet augue luctus dolor luctus  &lt;/br&gt; An enim nullam tempor sapien gravida donec congue metus. Vitae arcu mollis blandit integer nemo volute velna </p>
+                                          </li>
+                                          <!-- QUESTION #1 -->
+                                          <li class="question">
+                                             <!-- Question -->
+                                             <h5 class="s-22 w-700"><span>5.</span> I have an issue with my account</h5>
+                                             <!-- Answer -->
+                                             <p class="color--grey">Cubilia laoreet augue egestas and luctus donec curabite diam vitae dapibus libero and quisque gravida donec neque blandit justo aliquam molestie nunc sapien justo </p>
+                                          </li>
+                                          <!-- QUESTION #1 -->
+                                          <li class="question">
+                                             <!-- Question -->
+                                             <h5 class="s-22 w-700"><span>6.</span> Can I cancel at anytime?</h5>
+                                             <!-- Answer -->
+                                             <p class="color--grey">An enim nullam tempor sapien gravida donec ipsum and enim porta justo integer at velna vitae auctor integer congue undo magna laoreet augue pretium purus pretium ligula</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <!-- End row -->
+                                 </div>
+                                 <!-- END FAQs-3 QUESTIONS -->                    <!-- MORE QUESTIONS LINK -->
+                                 <div class="row">
+                                    <div class="col">
+                                       <div class="more-questions mt-40">
+                                          <div class="more-questions-txt bg--white-400 r-100">
+                                             <p class="p-lg">
+                                             <p>Any questions? <a class="color--theme" href="contact-us/index.html">Get in Touch</a></p>
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- End container -->
+                           </section>
+                           <!-- END FAQs-3 -->		
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-f0ffc60 color--white content-section elementor-section-boxed elementor-section-height-default elementor-section-height-default content-1" data-id="f0ffc60" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-extended">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-706ea63" data-id="706ea63" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-926e537 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="926e537" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <div class="elementor-container elementor-column-gap-no">
+                           <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-71b59e2" data-id="71b59e2" data-element_type="column">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="txt-block elementor-element elementor-element-2d48802 elementor-widget elementor-widget-content-text" data-id="2d48802" data-element_type="widget" data-widget_type="content-text.default">
+                                    <div class="elementor-widget-container">
+                                       <h2 class="title-element s-46 w-700">Starting with Martex is easy, fast and free</h2>
+                                       <p class="subtitle-element p-xl">It only takes a few clicks to get started</p>
+                                    </div>
+                                 </div>
+                                 <div class="elementor-element elementor-element-b0d4699 elementor-widget elementor-widget-buttons" data-id="b0d4699" data-element_type="widget" data-widget_type="buttons.default">
+                                    <div class="elementor-widget-container">
+                                       <div class="button-alignment">
+                                          <div class="btns-group">
+                                             <a href="pricing-page-1/index.html" class="btn icon-20 r-04 btn--theme hover--theme">Get srarted - it&quot;s free                                            </a>
+                                          </div>
+                                          <p class="p-sm btn-txt ico-15 o-85">
+                                             <span class="flaticon-check"></span> Free for 14 days, no credit card required.         
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+   </div>
+</div>
 @endsection

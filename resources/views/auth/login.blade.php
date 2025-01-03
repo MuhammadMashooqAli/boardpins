@@ -1,173 +1,113 @@
 @extends('layouts.master')
 @section('css')
-<style>
-.invalid-feedback{
-    display:block !important;
-}
-</style>
+   <style>
+      .invalid-feedback{
+         display:block !important;
+      }
+   </style>
+@endsection
+@section('title')
+  Login
 @endsection
 @section('content')
-<main>
-    <!-- breadcrumb area start -->
-    <section class="breadcrumb__area breadcrumb-height include-bg p-relative" data-background="assets/img/breadcrumb/breadcurmb.jpg">
-       <div class="container">
-          <div class="row">
-             <div class="col-xxl-12">
-                <div class="breadcrumb__content">
-                   <h3 class="breadcrumb__title">Contact us</h3>
-                   <span class="breadcrumb__subtitle">Home <i class="far fa-angle-right"></i> <a href="#"> Contact us</a></span>
-                   <div class="breadcrumb__list wow tpfadeUp" data-wow-duration=".9s">
-                      <span><a href="#">Home</a></span>
-                      <span class="dvdr"><i class="fa fa-angle-right"></i></span>
-                      <span>LogIn</span>
-                    </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </section>
-    <!-- breadcrumb area end -->
-
-
-    <!-- contact area start -->
-    <div class="tp-contact-area pt-130 pb-130">
-       <div class="container">
-          <div class="row g-0 align-items-center justify-content-center">
-             <div class="col-xl-4 col-lg-4 col-md-5 col-12">
-                <div class="contact-box">
-                   <div class="contact-box-circle">
-                      <span>O</span>
-                      <span>R</span>
-                   </div>
-                   <h3 class="contact-box__title">Contact <br> Directly</h3>
-                   <div class="contact-box__info-list">
-                      <ul>
-                         <li><a href="tel:4805550103"><i class="fal fa-phone-alt"></i> (480) 555-0103</a></li>
-                         <li><a href="https://www.google.com.bd/maps/@-26.7452242,128.312617,5.17z" target="_blank"><i class="fal fa-map-marker-alt"></i> Canberra, Australia</a></li>
-                         <li><a href="/cdn-cgi/l/email-protection#dcb1b5bfb4b9b0b0b9f2aeb5aab9aebd9cb9a4bdb1acb0b9f2bfb3b1"><i class="fal fa-globe"></i><span class="__cf_email__" data-cfemail="dbb3beb7ab9bbea3bab6abb7bef5b8b4b6">[email&#160;protected]</span></a></li>
-                      </ul>
-                   </div>
-                   <div class="contact-box__social">
-                      <ul>
-                         <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                         <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                         <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                         <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-8 col-lg-8 col-md-7 col-12">
-                <div class="postbox__comment-form contact-wrapper">
-                   <h3 class="postbox__comment-form-title">Send us a
-                      Message</h3>
-
-                      <form method="POST" action="{{ route('login') }}">
-                        @csrf
-                    <div class="row">
-                         <div class="col-12">
-                            <div class="postbox__comment-input">
-                               <input type="email" placeholder="Enter your mail" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                            </div>
-                            @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                         </div>
-                         <div class="col-12">
-                            <div class="postbox__comment-input">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-
-                            </div>
-                            @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                         </div>
-                         <div class="col-12">
-                            <div class="postbox__comment-btn">
-                               <button type="submit" class="tp-btn">Let,s Talk</button>
-                            </div>
-                         </div>
-                      </div>
-                   </form>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- contact area end -->
-
-
-
-    <!-- tp-social-area-start -->
-    <div class="tp-social-area social-space-bottom fix">
-       <div class="container-fluid p-0">
-          <div class="row g-0">
-             <div class="col-lg-2 col-md-4 col-sm-6">
-                <a href="#">
-                   <div class="tp-social-item">
-                      <span><i class="fab fa-facebook-f"></i> Facebook</span>
-                   </div>
-                </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-                <a href="#">
-                   <div class="tp-social-item tp-youtube">
-                      <span><i class="fab fa-youtube"></i> youtube</span>
-                   </div>
-                </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-               <a href="#">
-                   <div class="tp-social-item tp-behance">
-                      <span><i class="fab fa-behance"></i> behance</span>
-                   </div>
-               </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-                <a href="#">
-                   <div class="tp-social-item tp-dribble">
-                      <span><i class="fab fa-dribbble"></i> dribbble</span>
-                   </div>
-                </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-                <a href="#">
-                   <div class="tp-social-item tp-twitter">
-                      <span><i class="fab fa-twitter"></i> twitter</span>
-                   </div>
-                </a>
-             </div>
-             <div class="col-lg-2 col-md-4 col-sm-6">
-               <a href="#">
-                   <div class="tp-social-item tp-linkedin">
-                      <span><i class="fab fa-linkedin"></i>linkedin</span>
-                   </div>
-               </a>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-social-area-end -->
- </main>
-
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-
-                </div>
-            </div>
-        </div>
-    </div>
+<div id="page" class="page" style="margin-top:10%">
+   <main id="content" class="main container-full py-0">
+      <div class="overflow-hidden page type-page status-publish hentry entry">
+         <div data-elementor-type="wp-page" data-elementor-id="5124" class="elementor elementor-5124">
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-2e50321 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2e50321" data-element_type="section" id="login">
+               <div class="elementor-container elementor-column-gap-default">
+                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dc148ee" data-id="dc148ee" data-element_type="column">
+                     <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-d66bb63 elementor-widget elementor-widget-martex_login_form" data-id="d66bb63" data-element_type="widget" data-widget_type="martex_login_form.default">
+                           <div class="elementor-widget-container">
+                              <div class="row justify-content-center" >
+                                 <!-- REGISTER PAGE WRAPPER -->
+                                 <div class="col-lg-11">
+                                    <div class="register-page-wrapper r-16 bg--fixed">
+                                       <div class="row">
+                                          <!-- LOGIN PAGE TEXT -->
+                                          <div class="col-md-6">
+                                             <div class="register-page-txt color--white">
+                                                <!-- Logo -->
+                                                <!-- <img decoding="async" class="img-fluid" src="images/logo-white.png" alt="logo-image">		 -->
+                                                <a href="https://jthemes.net/themes/wp/martex">
+                                                <img decoding="async" class="img-fluid" src="../wp-content/uploads/2023/08/logo-white.png" alt="Logo">
+                                                </a>
+                                                <!-- Title -->
+                                                <h2 class="s-42 w-700">Welcome<br>back to Martex</h2>
+                                                <!-- Text -->
+                                                <p class="p-md mt-25">Integer congue sagittis and velna augue egestas magna suscipit purus aliquam</p>
+                                                <!-- Copyright -->
+                                                <div class="register-page-copyright">
+                                                   <p class="p-sm">&copy; 2023 Martex &#8211; All Rights Reserved</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- END LOGIN PAGE TEXT -->
+                                          <!-- LOGIN FORM -->
+                                          <div class="col-md-6">
+                                             <div class="register-page-form">
+                                                <form class="rwmb-form mbup-form"  action="{{ route('login') }}" method="post" enctype="multipart/form-data" id="login-form">
+                                                   @csrf  
+                                                   <div class="ctrlbp-field ctrlbp-row ctrlbp-text-wrapper  required ctrlbp-field-has-label">
+                                                      <div class="ctrlbp-label ctrlbp-col-12 ctrlbp-col-md-3">
+                                                         <label for="user_login">Username or Email Address<span class="ctrlbp-required">*</span></label>
+                                                      </div>
+                                                      <div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12">
+                                                         <input  type="email" placeholder="Enter your mail" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus id="user_login" class="ctrlbp-text form-control">
+                                                         @error('email')
+                                                         <span class="invalid-feedback" role="alert">
+                                                         <strong>{{ $message }}</strong>
+                                                         </span>
+                                                         @enderror
+                                                      </div>
+                                                   </div>
+                                                   <div class="ctrlbp-field ctrlbp-row ctrlbp-password-wrapper  required ctrlbp-field-has-label">
+                                                      <div class="ctrlbp-label ctrlbp-col-12 ctrlbp-col-md-3">
+                                                         <label for="user_pass">Password<span class="ctrlbp-required">*</span></label>
+                                                      </div>
+                                                      <div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><input  type="password" required="1" id="user_pass" class="ctrlbp-password form-control  @error('password') is-invalid @enderror" name="password">
+                                                         @error('password')
+                                                         <span class="invalid-feedback" role="alert">
+                                                         <strong>{{ $message }}</strong>
+                                                         </span>
+                                                         @enderror
+                                                      </div>
+                                                   </div>
+                                                   <div class="ctrlbp-field ctrlbp-row ctrlbp-checkbox-wrapper  ctrlbp-field-no-label">
+                                                      <div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><label id='remember_description' class='description'>
+                                                         <input  value="1" type="checkbox" id="remember" class="ctrlbp-checkbox" name="remember" > Remember Me</label>
+                                                      </div>
+                                                   </div>
+                                                   <div class="ctrlbp-field ctrlbp-row ctrlbp-button-wrapper  ctrlbp-field-no-label">
+                                                      <div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12"><button  type="submit" id="submit" class="ctrlbp-button btn btn--theme hover--theme submit button hide-if-no-js" name="rwmb_profile_submit_login" value="1">Log In</button></div>
+                                                   </div>
+                                                   <div class="ctrlbp-field ctrlbp-row ctrlbp-custom_html-wrapper  ctrlbp-field-no-label">
+                                                      <div class="ctrlbp-input ctrlbp-col-12 ctrlbp-col-md-12">
+                                                         <p class="create-account text-center mt-3 mb-0"><a href="indexd94d.html?rwmb-lost-password=true">Lost Password?</a></p>
+                                                      </div>
+                                                   </div>
+                                             </div>
+                                             </form>
+                                             <p class="create-account text-center">Don't have an account? <a class="color--theme" href="../register/index.html">SignUp</a></p>
+                                          </div>
+                                       </div>
+                                       <!-- END LOGIN FORM -->
+                                    </div>
+                                    <!-- End row -->
+                                 </div>
+                                 <!-- End register-page-wrapper -->
+                              </div>
+                              <!-- END REGISTER PAGE WRAPPER -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+         </section>
+      </div>
+</div>
+</main><!-- .container -->
 </div>
 @endsection

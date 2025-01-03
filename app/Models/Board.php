@@ -9,9 +9,20 @@ class Board extends Model
 {
     use HasFactory;
 
+    use HasFactory;
+
     protected $fillable = [
-        'name',
+        'user_id',
         'board_id',
+        'name',
+        'description',
+        'privacy',
+        'follower_count',
+        'collaborator_count',
+        'pin_count',
+        'image_cover_url',
+        'created_at_board',
+        'updated_at_board',
     ];
 
     public function pins()
