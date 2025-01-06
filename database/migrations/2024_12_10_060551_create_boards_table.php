@@ -13,9 +13,20 @@ return new class extends Migration
     {
         Schema::create('boards', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->unsignedBigInteger('user_id');
             $table->string('board_id')->unique();
+            $table->string('name');
+            $table->text('description')->nullable();
+            $table->string('privacy');
+            $table->integer('follower_count')->default(0);
+            $table->integer('collaborator_count')->default(0);
+            $table->integer('pin_count')->default(0);
+            $table->string('image_cover_url')->nullable();
+            $table->timestamp('created_at_board')->nullable();
+            $table->timestamp('updated_at_board')->nullable();
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
