@@ -9,10 +9,10 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="txt-block elementor-element elementor-element-4731846 elementor-widget elementor-widget-content-text" data-id="4731846" data-element_type="widget" data-widget_type="content-text.default">
                         <div class="elementor-widget-container">
-                           <h2 class="title-element s-58 w-700 mb-4">Content is the key to building an audience</h2>
-                           <p class="subtitle-element p-xl">Mauris donec turpis suscipit sapien ociis sagittis sapien tempor a volute ligula and aliquet tortor </p>
-                           <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"><a href="#" class="btn r-04 btn--theme hover--tra-white">Get started for free</a></div>
-                           <p>No credit card needed, free 14-day trial</p>
+                           <h2 class="title-element s-58 w-700 mb-4">Create a Month's Worth of Pinterest Content in Minutes!</h2>
+                           <p class="subtitle-element p-xl">Creating Engaging Pins Used to Take Hours—Now It Takes Seconds! </p>
+                           <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"><a href="#" class="btn r-04 btn--theme hover--tra-white">Generate Pins</a></div>
+                           <p>An Easy Way To Complete Your Task</p>
                         </div>
                      </div>
                   </div>
@@ -21,7 +21,7 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="hero-1-img elementor-element elementor-element-d914efa elementor-widget elementor-widget-content-image" data-id="d914efa" data-element_type="widget" data-widget_type="content-image.default">
                         <div class="elementor-widget-container">
-                           <img fetchpriority="high" decoding="async" width="795" height="975" src="wp-content/uploads/2023/07/hero-1-img.png" class="attachment-large size-large wp-image-130 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/hero-1-img.png 795w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/hero-1-img-600x736.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/hero-1-img-245x300.png 245w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/hero-1-img-768x942.png 768w" sizes="(max-width: 795px) 100vw, 795px" style="width:100%;height:122.64%;max-width:795px" />																			
+                           <img fetchpriority="high" decoding="async" width="795" height="975" src="{{ asset('assets/images/hero-img.png') }}" class="attachment-large size-large wp-image-130 img-fluid" alt="" srcset="{{ asset('assets/images/hero-img.png') }} 795w, {{ asset('assets/images/hero-img.png') }} 600w, {{ asset('assets/images/hero-img.png') }} 245w, {{ asset('assets/images/hero-img.png') }} 768w" sizes="(max-width: 795px) 100vw, 795px" style="width:100%;height:122.64%;max-width:795px" />
                         </div>
                      </div>
                   </div>
@@ -42,8 +42,8 @@
                               <div class="elementor-widget-wrap elementor-element-populated">
                                  <div class="section-title mb-70 elementor-element elementor-element-cf31a0a elementor-widget elementor-widget-section_title" data-id="cf31a0a" data-element_type="widget" data-widget_type="section_title.default">
                                     <div class="elementor-widget-container">
-                                       <h2 class="title-element s-46">Build a customer-centric marketing strategy</h2>
-                                       <p class="description-element s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                       <h2 class="title-element s-46">A Variety of Options to Elevate Your Creativity</h2>
+                                       <p class="description-element s-21">Explore an extensive range of customizable solutions tailored to meet your unique needs. From versatile templates to advanced tools, discover endless possibilities to enhance your creativity and streamline your workflow.</p>
                                     </div>
                                  </div>
                               </div>
@@ -58,26 +58,21 @@
                         <div class="elementor-widget-container">
                            <!-- FEATURES-6 WRAPPER -->
                            <div class="fbox-wrapper">
-                              <div class="row row-cols-1 row-cols-md-4">
+                              <div class="row row-cols-1 row-cols-md-3">
                                  <!-- FEATURE BOX #1 -->
                                  <div class="col text-center">
                                     <div class="fbox-2 fb-1">
                                        <!-- Icon -->
-                                       <div class="fbox-ico ico-55">
+                                       <div class="fbox-ico ">
                                           <div class="shape-ico color--theme">
-                                             <div class="tab-link-ico">
-                                                <span class="flaticon-graphics"></span>
-                                             </div>
-                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
-                                             </svg>
+                                         <img fetchpriority="high" decoding="async" width="80" height="80" src="{{ asset('assets/images/automation.svg') }}" />
                                           </div>
                                        </div>
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Market Research</h6>
-                                          <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                          <h6 class="s-22 w-700">Full automation</h6>
+                                          <p>Save time, streamline tasks, and boost efficiency effortlessly!</p>
                                        </div>
                                     </div>
                                  </div>
@@ -86,21 +81,16 @@
                                  <div class="col text-center">
                                     <div class="fbox-2 fb-1">
                                        <!-- Icon -->
-                                       <div class="fbox-ico ico-55">
+                                       <div class="fbox-ico ">
                                           <div class="shape-ico color--theme">
-                                             <div class="tab-link-ico">
-                                                <span class="flaticon-idea"></span>
-                                             </div>
-                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
-                                             </svg>
+                                         <img fetchpriority="high" decoding="async" width="80" height="80" src="{{ asset('assets/images/text.svg') }}" />
                                           </div>
                                        </div>
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">User Experience</h6>
-                                          <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                          <h6 class="s-22 w-700">AI text writer</h6>
+                                          <p>Instantly create engaging, high-quality content with ease and precision!</p>
                                        </div>
                                     </div>
                                  </div>
@@ -109,21 +99,16 @@
                                  <div class="col text-center">
                                     <div class="fbox-2 fb-1">
                                        <!-- Icon -->
-                                       <div class="fbox-ico ico-55">
+                                       <div class="fbox-ico ">
                                           <div class="shape-ico color--theme">
-                                             <div class="tab-link-ico">
-                                                <span class="flaticon-graphic"></span>
-                                             </div>
-                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
-                                             </svg>
+                                         <img fetchpriority="high" decoding="async" width="80" height="80" src="{{ asset('assets/images/scheduler.svg') }}" />
                                           </div>
                                        </div>
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Digital Marketing</h6>
-                                          <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                          <h6 class="s-22 w-700">Bulk scheduler</h6>
+                                          <p>Plan and schedule multiple posts effortlessly in one go!</p>
                                        </div>
                                     </div>
                                  </div>
@@ -132,29 +117,113 @@
                                  <div class="col text-center">
                                     <div class="fbox-2 fb-1">
                                        <!-- Icon -->
-                                       <div class="fbox-ico ico-55">
+                                       <div class="fbox-ico ">
                                           <div class="shape-ico color--theme">
-                                             <div class="tab-link-ico">
-                                                <span class="flaticon-search-engine-1"></span>
-                                             </div>
-                                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M69.8,-23C76.3,-2.7,57.6,25.4,32.9,42.8C8.1,60.3,-22.7,67,-39.1,54.8C-55.5,42.7,-57.5,11.7,-48.6,-11.9C-39.7,-35.5,-19.8,-51.7,5.9,-53.6C31.7,-55.6,63.3,-43.2,69.8,-23Z" transform="translate(100 100)" />
-                                             </svg>
+                                         <img fetchpriority="high" decoding="async" width="80" height="80" src="{{ asset('assets/images/compass.svg') }}" />
                                           </div>
                                        </div>
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">SEO Services</h6>
-                                          <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                          <h6 class="s-22 w-700">Template creator</h6>
+                                          <p>Design stunning, ready-to-use templates in minutes!</p>
                                        </div>
                                     </div>
                                  </div>
                                  <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ">
+                                          <div class="shape-ico color--theme">
+                                         <img fetchpriority="high" decoding="async" width="80" height="80" src="{{ asset('assets/images/multiboard-pin.svg') }}" />
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Multi-board pinning</h6>
+                                          <p>Pin your content to multiple boards with a single click!</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ">
+                                          <div class="shape-ico color--theme">
+                                         <img fetchpriority="high" decoding="async" width="80" height="80" src="{{ asset('assets/images/import.svg') }}" />
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Import your products</h6>
+                                          <p>Seamlessly add your product catalog in just a few steps!</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ">
+                                          <div class="shape-ico color--theme">
+                                         <img fetchpriority="high" decoding="async" width="80" height="80" src="{{ asset('assets/images/edit-multiple.svg') }}" />
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Edit multiple pins at once</h6>
+                                          <p>Save time by updating all your pins in bulk!</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ">
+                                          <div class="shape-ico color--theme">
+                                         <img fetchpriority="high" decoding="async" width="80" height="80" src="{{ asset('assets/images/dollar.svg') }}" />
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Free generations</h6>
+                                          <p>Create unlimited content without any cost!</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- END FEATURE BOX #1 -->
+                                 <!-- FEATURE BOX #1 -->
+                                 <div class="col text-center">
+                                    <div class="fbox-2 fb-1">
+                                       <!-- Icon -->
+                                       <div class="fbox-ico ">
+                                          <div class="shape-ico color--theme">
+                                         <img fetchpriority="high" decoding="async" width="80" height="80" src="{{ asset('assets/images/connect.svg') }}" />
+                                          </div>
+                                       </div>
+                                       <!-- End Icon -->
+                                       <!-- Text -->
+                                       <div class="fbox-txt">
+                                          <h6 class="s-22 w-700">Connect unlimited Pinterest profiles</h6>
+                                          <p>Manage all your accounts from one platform!</p>
+                                       </div>
+                                    </div>
+                                 </div>
                               </div>
                               <!-- End row -->
                            </div>
-                           <!-- END FEATURES-6 WRAPPER -->		
+                           <!-- END FEATURES-6 WRAPPER -->
                         </div>
                      </div>
                   </div>
@@ -186,7 +255,7 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="img-block elementor-element elementor-element-1f9a4fb elementor-widget elementor-widget-content-image" data-id="1f9a4fb" data-element_type="widget" data-widget_type="content-image.default">
                         <div class="elementor-widget-container">
-                           <img decoding="async" width="615" height="715" src="wp-content/uploads/2023/07/img-10.png" class="attachment-large size-large wp-image-151 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-10.png 615w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-10-600x698.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-10-258x300.png 258w" sizes="(max-width: 615px) 100vw, 615px" style="width:100%;height:116.26%;max-width:615px" />																			
+                           <img decoding="async" width="615" height="715" src="{{ asset('assets/images/sec.webp') }}" class="attachment-large size-large wp-image-151 img-fluid" alt="" srcset={{ asset('assets/images/sec.webp') }} 615w, {{ asset('assets/images/sec.webp') }} 600w, {{ asset('assets/images/sec.webp') }} 258w" sizes="(max-width: 615px) 100vw, 615px" style="width:100%;height:116.26%;max-width:615px" />
                         </div>
                      </div>
                   </div>
@@ -195,14 +264,14 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="txt-block elementor-element elementor-element-ccccc4a elementor-widget elementor-widget-content-text" data-id="ccccc4a" data-element_type="widget" data-widget_type="content-text.default">
                         <div class="elementor-widget-container">
-                           <span class="name-element section-id">Enhance Engagement</span>
-                           <h2 class="title-element s-46 w-700">Engage your most valuable visitors</h2>
-                           <p class="subtitle-element default">Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque auctor turpis vitae dolor luctus placerat magna and ligula cursus purus vitae purus an ipsum suscipit </p>
-                           <h5 class="s-24 w-700"><strong>Digits that define growth</strong></h5>
+                           <span class="name-element section-id">Boost Engagement</span>
+                           <h2 class="title-element s-46 w-700">Boost Engagement Like Never Before</h2>
+                           <p class="subtitle-element default">Supercharge your content strategy with powerful tools designed to captivate your audience. Increase reach, inspire action, and maximize interaction effortlessly. </p>
+                           <h5 class="s-24 w-700"><strong>Growing Visibility and Engagement on Pinterest</strong></h5>
                            <ul class="simple-list">
-                              <li class="list-item">Sapien quaerat tempor an ipsum laoreet purus and sapien dolor an ultrice ipsum aliquam undo congue cursus dolor</li>
+                              <li class="list-item">The analytics highlight substantial progress in both visibility and user interaction on Pinterest. With significant increases across key metrics, the content is successfully reaching a broader audience and fostering deeper engagement.</li>
                               <li class="list-item">
-                                 <p class="mb-0">Purus suscipit cursus vitae cubilia magnis volute egestas vitae sapien turpis ultrice auctor congue magna placerat</p>
+                                 <p class="mb-0">The steady upward trend in activity over time underscores the effectiveness of the current strategy. Notable peaks indicate highly impactful periods of content performance, reflecting a strong foundation for continued success on the platform.</p>
                               </li>
                            </ul>
                            <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"></div>
@@ -218,14 +287,15 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="txt-block elementor-element elementor-element-bb9bdc6 elementor-widget elementor-widget-content-text" data-id="bb9bdc6" data-element_type="widget" data-widget_type="content-text.default">
                         <div class="elementor-widget-container">
-                           <h5 class="title-element s-24 w-700  ">Solution that grows with you</h5>
-                           <p class="subtitle-element default default">Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque auctor turpis vitae dolor luctus placerat magna and ligula cursus purus vitae purus an ipsum suscipit </p>
-                           <h5 class="s-24 w-700">Connect your data sources</h5>
-                           <p>Tempor sapien sodales quaerat ipsum undo congue laoreet turpis neque auctor turpis vitae dolor luctus placerat magna and ligula cursus purus an ipsum vitae suscipit purus</p>
-                           <ul class="simple-list">
-                              <li class="list-item">Tempor sapien quaerat an ipsum laoreet purus and sapien dolor an ultrice ipsum aliquam undo congue dolor cursus</li>
+                           <h5 class="title-element s-24 w-700  ">Generate Pins Quickly and Efficiently</h5>
+                           <p class="subtitle-element default default">Effortlessly create stunning Pinterest pins in no time. Extract images and data from any URL, shuffle pins for a fresh look, and make bulk edits to designs with ease. Streamline your pin creation process and focus on engaging your audience </p>
+                             <ul class="simple-list">
+                              <li class="list-item">Grab Images and Data</li>
                               <li class="list-item">
-                                 <p class="mb-0">Cursus purus suscipit vitae cubilia magnis volute egestas vitae sapien turpis ultrice auctor congue magna placerat</p>
+                                 Shuffle Pins
+                              </li>
+                              <li class="list-item">
+                                 Bulk Edit Designs
                               </li>
                            </ul>
                            <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"></div>
@@ -237,7 +307,7 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="img-block elementor-element elementor-element-7c18c6e elementor-widget elementor-widget-content-image" data-id="7c18c6e" data-element_type="widget" data-widget_type="content-image.default">
                         <div class="elementor-widget-container">
-                           <img decoding="async" width="675" height="765" src="wp-content/uploads/2023/07/img-06.png" class="attachment-large size-large wp-image-178 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-06.png 675w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-06-600x680.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-06-265x300.png 265w" sizes="(max-width: 675px) 100vw, 675px" style="width:100%;height:113.33%;max-width:675px" />																			
+                           <img decoding="async" width="675" height="765" src="wp-content/uploads/2023/07/img-06.png" class="attachment-large size-large wp-image-178 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-06.png 675w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-06-600x680.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-06-265x300.png 265w" sizes="(max-width: 675px) 100vw, 675px" style="width:100%;height:113.33%;max-width:675px" />
                         </div>
                      </div>
                   </div>
@@ -307,7 +377,7 @@
                                  <!-- END FEATURE BOX #1 -->
                               </div>
                            </div>
-                           <!-- END FEATURES-6 WRAPPER -->		
+                           <!-- END FEATURES-6 WRAPPER -->
                         </div>
                      </div>
                   </div>
@@ -334,7 +404,7 @@
                                                 <!-- Digit -->
                                                 <div class="statistic-block-digit text-center">
                                                    <h2 class="s-46 statistic-number">
-                                                      <span class="count-element">89</span>k                                        
+                                                      <span class="count-element">89</span>k
                                                    </h2>
                                                 </div>
                                                 <!-- statistic Text -->
@@ -352,7 +422,7 @@
                                                 <!-- Digit -->
                                                 <div class="statistic-block-digit text-center">
                                                    <h2 class="s-46 statistic-number">
-                                                      <span class="count-element">76</span>%                                        
+                                                      <span class="count-element">76</span>%
                                                    </h2>
                                                 </div>
                                                 <!-- statistic Text -->
@@ -370,7 +440,7 @@
                                                 <!-- Digit -->
                                                 <div class="statistic-block-digit text-center">
                                                    <h2 class="s-46 statistic-number">
-                                                      <span class="count-element">4</span>.                                            <span class="count-element">5</span>k                                        
+                                                      <span class="count-element">4</span>.                                            <span class="count-element">5</span>k
                                                    </h2>
                                                 </div>
                                                 <!-- statistic Text -->
@@ -410,7 +480,7 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="img-block elementor-element elementor-element-0066fc7 elementor-widget elementor-widget-content-image" data-id="0066fc7" data-element_type="widget" data-widget_type="content-image.default">
                         <div class="elementor-widget-container">
-                           <img loading="lazy" decoding="async" width="665" height="720" src="wp-content/uploads/2023/07/img-03.png" class="attachment-large size-large wp-image-185 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-03.png 665w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-03-600x650.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-03-277x300.png 277w" sizes="(max-width: 665px) 100vw, 665px" style="width:100%;height:108.27%;max-width:665px" />																			
+                           <img loading="lazy" decoding="async" width="665" height="720" src="wp-content/uploads/2023/07/img-03.png" class="attachment-large size-large wp-image-185 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-03.png 665w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-03-600x650.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-03-277x300.png 277w" sizes="(max-width: 665px) 100vw, 665px" style="width:100%;height:108.27%;max-width:665px" />
                         </div>
                      </div>
                   </div>
@@ -559,7 +629,7 @@
                                  </div>
                               </div>
                            </div>
-                           <!-- END FEATURES-6 WRAPPER -->		
+                           <!-- END FEATURES-6 WRAPPER -->
                         </div>
                      </div>
                   </div>
@@ -572,7 +642,7 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="img-block elementor-element elementor-element-ee7e113 elementor-widget elementor-widget-content-image" data-id="ee7e113" data-element_type="widget" data-widget_type="content-image.default">
                         <div class="elementor-widget-container">
-                           <img loading="lazy" decoding="async" width="615" height="530" src="wp-content/uploads/2023/07/img-02.png" class="attachment-large size-large wp-image-202 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-02.png 615w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-02-600x517.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-02-300x259.png 300w" sizes="(max-width: 615px) 100vw, 615px" style="width:100%;height:86.18%;max-width:615px" />																			
+                           <img loading="lazy" decoding="async" width="615" height="530" src="wp-content/uploads/2023/07/img-02.png" class="attachment-large size-large wp-image-202 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-02.png 615w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-02-600x517.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-02-300x259.png 300w" sizes="(max-width: 615px) 100vw, 615px" style="width:100%;height:86.18%;max-width:615px" />
                         </div>
                      </div>
                   </div>
@@ -641,7 +711,7 @@
                               </div>
                               <!-- End section overlay -->
                            </section>
-                           <!-- END IMAGE CONTENT -->		
+                           <!-- END IMAGE CONTENT -->
                         </div>
                      </div>
                   </div>
@@ -819,7 +889,7 @@
                               </div>
                               <!-- End row -->
                            </div>
-                           <!-- END FEATURES-6 WRAPPER -->		
+                           <!-- END FEATURES-6 WRAPPER -->
                         </div>
                      </div>
                   </div>
@@ -875,7 +945,7 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="img-block elementor-element elementor-element-97940c6 elementor-widget elementor-widget-content-image" data-id="97940c6" data-element_type="widget" data-widget_type="content-image.default">
                         <div class="elementor-widget-container">
-                           <img loading="lazy" decoding="async" width="650" height="790" src="wp-content/uploads/2023/07/img-13.png" class="attachment-large size-large wp-image-221 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-13.png 650w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-13-600x729.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-13-247x300.png 247w" sizes="(max-width: 650px) 100vw, 650px" style="width:100%;height:121.54%;max-width:650px" />																			
+                           <img loading="lazy" decoding="async" width="650" height="790" src="wp-content/uploads/2023/07/img-13.png" class="attachment-large size-large wp-image-221 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-13.png 650w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-13-600x729.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-13-247x300.png 247w" sizes="(max-width: 650px) 100vw, 650px" style="width:100%;height:121.54%;max-width:650px" />
                         </div>
                      </div>
                   </div>
@@ -921,7 +991,7 @@
                                        <style>/*! elementor - v3.18.0 - 04-12-2023 */
                                           .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}
                                        </style>
-                                       <img loading="lazy" decoding="async" width="1015" height="390" src="wp-content/uploads/2023/07/img-19.png" class="attachment-large size-large wp-image-231 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19.png 1015w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19-600x231.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19-300x115.png 300w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19-768x295.png 768w" sizes="(max-width: 1015px) 100vw, 1015px" style="width:100%;height:38.42%;max-width:1015px" />															
+                                       <img loading="lazy" decoding="async" width="1015" height="390" src="wp-content/uploads/2023/07/img-19.png" class="attachment-large size-large wp-image-231 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19.png 1015w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19-600x231.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19-300x115.png 300w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-19-768x295.png 768w" sizes="(max-width: 1015px) 100vw, 1015px" style="width:100%;height:38.42%;max-width:1015px" />
                                     </div>
                                  </div>
                                  <div class="elementor-element elementor-element-6b29a3c elementor-widget elementor-widget-buttons" data-id="6b29a3c" data-element_type="widget" data-widget_type="buttons.default">
@@ -970,7 +1040,7 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="img-block elementor-element elementor-element-13f1852 elementor-widget elementor-widget-content-image" data-id="13f1852" data-element_type="widget" data-widget_type="content-image.default">
                         <div class="elementor-widget-container">
-                           <img loading="lazy" decoding="async" width="645" height="840" src="wp-content/uploads/2023/07/img-09.png" class="attachment-large size-large wp-image-588 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-09.png 645w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-09-600x781.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-09-230x300.png 230w" sizes="(max-width: 645px) 100vw, 645px" style="width:100%;height:130.23%;max-width:645px" />																			
+                           <img loading="lazy" decoding="async" width="645" height="840" src="wp-content/uploads/2023/07/img-09.png" class="attachment-large size-large wp-image-588 img-fluid" alt="" srcset="https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-09.png 645w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-09-600x781.png 600w, https://jthemes.net/themes/wp/martex/wp-content/uploads/2023/07/img-09-230x300.png 230w" sizes="(max-width: 645px) 100vw, 645px" style="width:100%;height:130.23%;max-width:645px" />
                         </div>
                      </div>
                   </div>
@@ -1335,7 +1405,7 @@
                               </div>
                               <!-- End container -->
                            </section>
-                           <!-- END INTEGRATIONS-2 -->		
+                           <!-- END INTEGRATIONS-2 -->
                         </div>
                      </div>
                   </div>
@@ -1428,7 +1498,7 @@
                               </div>
                               <!-- End container -->
                            </section>
-                           <!-- END FAQs-3 -->		
+                           <!-- END FAQs-3 -->
                         </div>
                      </div>
                   </div>
@@ -1456,7 +1526,7 @@
                                              <a href="pricing-page-1/index.html" class="btn icon-20 r-04 btn--theme hover--theme">Get srarted - it&quot;s free                                            </a>
                                           </div>
                                           <p class="p-sm btn-txt ico-15 o-85">
-                                             <span class="flaticon-check"></span> Free for 14 days, no credit card required.         
+                                             <span class="flaticon-check"></span> Free for 14 days, no credit card required.
                                           </p>
                                        </div>
                                     </div>
