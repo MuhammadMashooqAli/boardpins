@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('content')
+<link rel="stylesheet" href="assets/css/flaticon.css">
+<link rel="stylesheet" href="assets/css/font-awesome-pro.css">
 <main>
+
       <!-- tp-about-area-start -->
       <div class="tp-about-area ab-area-sapce pt-120 pb-120">
        <div class="container">
@@ -243,7 +246,7 @@
 
 
 </style>
-<div class="container" style="margin-top:2%">
+<div class="container" style="margin-top:12%">
     <div class="row">
         <div class="col-sm-3 postbox__comment-input">
             
@@ -258,13 +261,16 @@
                 <option value="4">Template 4</option>
             </select>
             <br> 
-            <br> 
-            <br>
 
+            <div class="row">
+                <div class="col-sm-6"> 
+                    <button id="scrape-btn" class="tp-btn btn icon-20 r-04 btn--theme hover--theme">Generate Pins</button>
+                 </div>
+                 <div class="col-sm-6"> 
+                    <button onclick="saveAllCards()" class="tp-btn btn icon-20 r-04 btn--theme hover--theme">Save All Pins</button>
+                 </div>
+            </div>
             <!-- Trigger button -->
-            <button id="scrape-btn" class="tp-btn">Generate Pins</button>
-            <br><br>
-            <button onclick="saveAllCards()" class="tp-btn">Save All Pins</button>
             @if(true)
             <a href="{{url('request-pinterest-access-token')}}" target="_blank">Authorized</a>
             @endif

@@ -71,7 +71,7 @@
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Full automation</h6>
+                                          <h6 class="s-20 w-700">Full automation</h6>
                                           <p>Save time, streamline tasks, and boost efficiency effortlessly!</p>
                                        </div>
                                     </div>
@@ -89,7 +89,7 @@
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">AI text writer</h6>
+                                          <h6 class="s-20 w-700">AI text writer</h6>
                                           <p>Instantly create engaging, high-quality content with ease and precision!</p>
                                        </div>
                                     </div>
@@ -107,7 +107,7 @@
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Bulk scheduler</h6>
+                                          <h6 class="s-20 w-700">Bulk scheduler</h6>
                                           <p>Plan and schedule multiple posts effortlessly in one go!</p>
                                        </div>
                                     </div>
@@ -125,7 +125,7 @@
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Template creator</h6>
+                                          <h6 class="s-20 w-700">Template creator</h6>
                                           <p>Design stunning, ready-to-use templates in minutes!</p>
                                        </div>
                                     </div>
@@ -143,7 +143,7 @@
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Multi-board pinning</h6>
+                                          <h6 class="s-20 w-700">Multi-board pinning</h6>
                                           <p>Pin your content to multiple boards with a single click!</p>
                                        </div>
                                     </div>
@@ -161,7 +161,7 @@
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Import your products</h6>
+                                          <h6 class="s-20 w-700">Import your products</h6>
                                           <p>Seamlessly add your product catalog in just a few steps!</p>
                                        </div>
                                     </div>
@@ -179,7 +179,7 @@
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Edit multiple pins at once</h6>
+                                          <h6 class="s-20 w-700">Edit multiple pins at once</h6>
                                           <p>Save time by updating all your pins in bulk!</p>
                                        </div>
                                     </div>
@@ -197,7 +197,7 @@
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Free generations</h6>
+                                          <h6 class="s-20 w-700">Free generations</h6>
                                           <p>Create unlimited content without any cost!</p>
                                        </div>
                                     </div>
@@ -215,7 +215,7 @@
                                        <!-- End Icon -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Connect unlimited Pinterest profiles</h6>
+                                          <h6 class="s-20 w-700">Connect unlimited Profiles</h6>
                                           <p>Manage all your accounts from one platform!</p>
                                        </div>
                                     </div>
@@ -328,8 +328,8 @@
                               <div class="elementor-widget-wrap elementor-element-populated">
                                  <div class="section-title mb-70 elementor-element elementor-element-3263de5 elementor-widget elementor-widget-section_title" data-id="3263de5" data-element_type="widget" data-widget_type="section_title.default">
                                     <div class="elementor-widget-container">
-                                       <h2 class="title-element s-46">Reach your audience through social media marketing</h2>
-                                       <p class="description-element s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                                       <h2 class="title-element s-36">Reach Your Audience Through an Effective Pinterest Strategy</h2>
+                                       <p class="description-element s-18">Pinterest is a powerful platform for driving traffic, building brand awareness, and reaching your target audience. To create an effective Pinterest strategy, follow these steps:</p>
                                     </div>
                                  </div>
                               </div>
@@ -350,13 +350,13 @@
                                     <div class="fbox-5 mb-30 fb-1 bg--white-400 r-16">
                                        <!-- Text -->
                                        <div class="fbox-txt order-last order-md-2">
-                                          <h5 class="s-26 w-700">Market Research</h5>
-                                          <p>Aliquam a augue suscipit luctus diam neque purus ipsum neque and dolor primis libero</p>
+                                          <h5 class="s-22 w-700">High-Quality Visuals and Keywords</h5>
+                                          <p>Use high-quality, vertical images that are visually appealing and aligned with your brand. Pair these with keyword-rich titles, descriptions, and board names to enhance discoverability and engagement.</p>
                                        </div>
                                        <!-- image -->
-                                       <div class="fbox-5-img order-first order-md-2">
+                                       <!-- <div class="fbox-5-img order-first order-md-2">
                                           <img decoding="async" class="img-fluid light-theme-img" src="wp-content/uploads/2023/07/f_06.png" alt="Market Research">
-                                       </div>
+                                       </div> -->
                                     </div>
                                  </div>
                                  <!-- END FEATURE BOX #1 -->
@@ -364,13 +364,13 @@
                                  <div class="col-md-6 text-center">
                                     <div class="fbox-5 mb-30 fb-2 bg--white-400 r-16">
                                        <!-- Image -->
-                                       <div class="fbox-5-img">
+                                       <!-- <div class="fbox-5-img">
                                           <img decoding="async" class="img-fluid light-theme-img" src="wp-content/uploads/2023/08/f_04.png" alt="Enhance Engagement">
-                                       </div>
+                                       </div> -->
                                        <!-- Text -->
                                        <div class="fbox-txt">
-                                          <h5 class="s-26 w-700">Enhance Engagement</h5>
-                                          <p>Aliquam a augue suscipit luctus diam neque purus ipsum neque and dolor primis libero</p>
+                                          <h5 class="s-26 w-700">Consistent Posting and Community Engagement</h5>
+                                          <p>Post consistently with well-designed content, engage with your audience through comments and repins, and monitor performance using analytics to refine your strategy for better results.</p>
                                        </div>
                                     </div>
                                  </div>
@@ -404,12 +404,12 @@
                                                 <!-- Digit -->
                                                 <div class="statistic-block-digit text-center">
                                                    <h2 class="s-46 statistic-number">
-                                                      <span class="count-element">89</span>k
+                                                      <span class="count-element">1</span>k+
                                                    </h2>
                                                 </div>
                                                 <!-- statistic Text -->
                                                 <div class="statistic-block-txt color--grey">
-                                                   <p class="p-md"> Porta justo integer and velna vitae auctor</p>
+                                                   <p class="p-md"> Join 1,000+ active users engaging with us daily!</p>
                                                 </div>
                                              </div>
                                           </div>
@@ -422,12 +422,12 @@
                                                 <!-- Digit -->
                                                 <div class="statistic-block-digit text-center">
                                                    <h2 class="s-46 statistic-number">
-                                                      <span class="count-element">76</span>%
+                                                      <span class="count-element">96</span>%
                                                    </h2>
                                                 </div>
                                                 <!-- statistic Text -->
                                                 <div class="statistic-block-txt color--grey">
-                                                   <p class="p-md"> Ligula magna suscipit vitae and rutrum </p>
+                                                   <p class="p-md"> Trusted by 1,000+ users with 96% satisfaction rate!</p>
                                                 </div>
                                              </div>
                                           </div>
@@ -440,12 +440,12 @@
                                                 <!-- Digit -->
                                                 <div class="statistic-block-digit text-center">
                                                    <h2 class="s-46 statistic-number">
-                                                      <span class="count-element">4</span>.                                            <span class="count-element">5</span>k
+                                                      <span class="count-element">4</span>.<span class="count-element">6</span>
                                                    </h2>
                                                 </div>
                                                 <!-- statistic Text -->
                                                 <div class="statistic-block-txt color--grey">
-                                                   <p class="p-md"> Sagittis congue augue egestas an egestas </p>
+                                                   <p class="p-md">Rated 4.6/5 by 1,000+ happy users! </p>
                                                 </div>
                                              </div>
                                           </div>
@@ -668,56 +668,7 @@
                </div>
             </div>
          </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-c43726a elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c43726a" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-no">
-               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-80a21bb" data-id="80a21bb" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <div class="elementor-element elementor-element-2bf6b39 elementor-widget elementor-widget-video_popup" data-id="2bf6b39" data-element_type="widget" data-widget_type="video_popup.default">
-                        <div class="elementor-widget-container">
-                           <!--  IMAGE CONTENT -->
-                           <section id="lnk-3" class="ct-10  bg--04  content-section division" style="--martex-video-popup-bg-04:url(wp-content/themes/martex/assets/images/bg-04.jpg)">
-                              <div class="section-overlay pt-100 pb-0 r-16">
-                                 <div class="container">
-                                    <!-- SECTION TITLE -->
-                                    <div class="row justify-content-center">
-                                       <div class="col-md-10 col-lg-9">
-                                          <div class="section-title mb-70">
-                                             <!-- Title -->
-                                             <h2 class="s-50 w-700">Track the progress towards objectives with key results</h2>
-                                             <!-- Text -->
-                                             <p class="s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <!-- IMAGE BLOCK -->
-                                    <div class="row justify-content-center">
-                                       <div class="col">
-                                          <div class=" img-block video-preview">
-                                             <!-- Play Icon -->
-                                             <a class="video-popup2" href="https://www.youtube.com/watch?v=7e90gBu4pas">
-                                                <div class="video-btn video-btn-xl bg--theme">
-                                                   <div class="video-block-wrapper"><span class="flaticon-play-button"></span>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                             <!-- Preview Image -->
-                                             <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/dashboard-01.png" alt="Track the progress towards objectives with key results">
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <!-- row -->
-                                 </div>
-                                 <!-- End container -->
-                              </div>
-                              <!-- End section overlay -->
-                           </section>
-                           <!-- END IMAGE CONTENT -->
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
+        
          <section class="elementor-section elementor-top-section elementor-element elementor-element-757086a elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="757086a" data-element_type="section">
             <div class="elementor-container elementor-column-gap-extended">
                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-14a7a36" data-id="14a7a36" data-element_type="column">
@@ -810,92 +761,7 @@
                </div>
             </div>
          </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-374efa3 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="374efa3" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-extended">
-               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d40e109" data-id="d40e109" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-f7a661a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f7a661a" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-9baaf1b" data-id="9baaf1b" data-element_type="column">
-                              <div class="elementor-widget-wrap">
-                              </div>
-                           </div>
-                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-fbf12e0" data-id="fbf12e0" data-element_type="column">
-                              <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="section-title mb-70 elementor-element elementor-element-f72f424 elementor-widget elementor-widget-section_title" data-id="f72f424" data-element_type="widget" data-widget_type="section_title.default">
-                                    <div class="elementor-widget-container">
-                                       <h2 class="title-element s-46">The Complete Solutions</h2>
-                                       <p class="description-element s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f35fe21" data-id="f35fe21" data-element_type="column">
-                              <div class="elementor-widget-wrap">
-                              </div>
-                           </div>
-                        </div>
-                     </section>
-                     <div class="elementor-element elementor-element-bce650f wow fadeInUp elementor-widget elementor-widget-martex_features" data-id="bce650f" data-element_type="widget" data-widget_type="martex_features.default">
-                        <div class="elementor-widget-container">
-                           <!-- FEATURES-6 WRAPPER -->
-                           <div class="fbox-wrapper">
-                              <div class="row row-cols-1 row-cols-md-3">
-                                 <!-- FEATURE BOX #1 -->
-                                 <div class="col text-center">
-                                    <div class="fbox-2 fb-1">
-                                       <div class="fbox-img gr--whitesmoke h-175">
-                                          <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/f_01.png" alt="Intuitive Dashboard">
-                                          <!-- <img decoding="async" class="img-fluid dark-theme-img" src="images/f_04_dark.png" alt="feature-image"> -->
-                                       </div>
-                                       <!-- Text -->
-                                       <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Intuitive Dashboard</h6>
-                                          <p>Luctus egestas augue undo ultrice aliquam in lacus congue dapibus</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- END FEATURE BOX #1 -->
-                                 <!-- FEATURE BOX #1 -->
-                                 <div class="col text-center">
-                                    <div class="fbox-2 fb-1">
-                                       <div class="fbox-img gr--whitesmoke h-175">
-                                          <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/f_05.png" alt="Effortless Integration">
-                                          <!-- <img decoding="async" class="img-fluid dark-theme-img" src="images/f_04_dark.png" alt="feature-image"> -->
-                                       </div>
-                                       <!-- Text -->
-                                       <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Effortless Integration</h6>
-                                          <p>Luctus egestas augue undo ultrice aliquam in lacus congue dapibus</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- END FEATURE BOX #1 -->
-                                 <!-- FEATURE BOX #1 -->
-                                 <div class="col text-center">
-                                    <div class="fbox-2 fb-1">
-                                       <div class="fbox-img gr--whitesmoke h-175">
-                                          <img decoding="async" class="img-fluid light-theme-img" src="wp-content/themes/martex/assets/images/f_02.png" alt="Digital Marketing">
-                                          <!-- <img decoding="async" class="img-fluid dark-theme-img" src="images/f_04_dark.png" alt="feature-image"> -->
-                                       </div>
-                                       <!-- Text -->
-                                       <div class="fbox-txt">
-                                          <h6 class="s-22 w-700">Digital Marketing</h6>
-                                          <p>Luctus egestas augue undo ultrice aliquam in lacus congue dapibus</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- END FEATURE BOX #1 -->
-                              </div>
-                              <!-- End row -->
-                           </div>
-                           <!-- END FEATURES-6 WRAPPER -->
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
+
          <section class="elementor-section elementor-top-section elementor-element elementor-element-58ea454 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="58ea454" data-element_type="section">
             <div class="elementor-container elementor-column-gap-no">
                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-654ab35" data-id="654ab35" data-element_type="column">
@@ -1307,111 +1173,7 @@
                </div>
             </div>
          </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-a8b32f6 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a8b32f6" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-no">
-               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c3cb6ff" data-id="c3cb6ff" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <div class="elementor-element elementor-element-eaca768 wow fadeInUp elementor-widget elementor-widget-martex_integrations" data-id="eaca768" data-element_type="widget" data-widget_type="martex_integrations.default">
-                        <div class="elementor-widget-container">
-                           <!-- INTEGRATIONS-2  -->
-                           <section id="integrations-2" class="integrations-section">
-                              <div class="container">
-                                 <!-- INTEGRATIONS-2 WRAPPER -->
-                                 <div class="integrations-2-wrapper bg--02 r-16 text-center" style=" --martex-integration-bg-02:url(wp-content/themes/martex/assets/images/bg-02.jpg)">
-                                    <!-- SECTION TITLE -->
-                                    <div class="row justify-content-center">
-                                       <div class="col-md-10 col-lg-9">
-                                          <div class="section-title mb-50">
-                                             <!-- Title -->
-                                             <h2 class="s-50 w-700">Automate your workflow with our integrations</h2>
-                                             <!-- Text -->
-                                             <p class="s-21 color--grey">Ligula risus auctor tempus magna feugiat lacinia.</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <!-- TOOLS ROW -->
-                                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 justify-content-center">
-                                       <!-- TOOL #1 -->
-                                       <div class="col">
-                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
-                                             <!-- Logo -->
-                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
-                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-1.png" alt="Zapier">
-                                             </div>
-                                             <!-- Title -->
-                                             <h6 class="s-17 w-700">Zapier</h6>
-                                          </a>
-                                       </div>
-                                       <!-- END TOOL #1 -->
-                                       <!-- TOOL #1 -->
-                                       <div class="col">
-                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
-                                             <!-- Logo -->
-                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
-                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-2.png" alt="Google Analytics">
-                                             </div>
-                                             <!-- Title -->
-                                             <h6 class="s-17 w-700">Google Analytics</h6>
-                                          </a>
-                                       </div>
-                                       <!-- END TOOL #1 -->
-                                       <!-- TOOL #1 -->
-                                       <div class="col">
-                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
-                                             <!-- Logo -->
-                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
-                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-3.png" alt="Amplitude">
-                                             </div>
-                                             <!-- Title -->
-                                             <h6 class="s-17 w-700">Amplitude</h6>
-                                          </a>
-                                       </div>
-                                       <!-- END TOOL #1 -->
-                                       <!-- TOOL #1 -->
-                                       <div class="col">
-                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
-                                             <!-- Logo -->
-                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
-                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-4.png" alt="Hubspot">
-                                             </div>
-                                             <!-- Title -->
-                                             <h6 class="s-17 w-700">Hubspot</h6>
-                                          </a>
-                                       </div>
-                                       <!-- END TOOL #1 -->
-                                       <!-- TOOL #1 -->
-                                       <div class="col">
-                                          <a href="#" class="in_tool it-1 r-12 mb-30 d-block">
-                                             <!-- Logo -->
-                                             <div class="in_tool_logo ico-65 bg--white-100 block-shadow r-12">
-                                                <img decoding="async" class="img-fluid" src="wp-content/themes/martex/assets/images/png_icons/tool-5.png" alt="MailChimp">
-                                             </div>
-                                             <!-- Title -->
-                                             <h6 class="s-17 w-700">MailChimp</h6>
-                                          </a>
-                                       </div>
-                                       <!-- END TOOL #1 -->
-                                    </div>
-                                    <!-- END TOOLS ROW -->                            <!-- MORE BUTTON -->
-                                    <div class="row">
-                                       <div class="col">
-                                          <div class="more-btn text-center mt-30">
-                                             <a href="integrations-page/index.html" class="btn btn--tra-black hover--theme">View all integrations</a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- END INTEGRATIONS-2 WRAPPER -->
-                              </div>
-                              <!-- End container -->
-                           </section>
-                           <!-- END INTEGRATIONS-2 -->
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
+     
          <section class="elementor-section elementor-top-section elementor-element elementor-element-dc089da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dc089da" data-element_type="section">
             <div class="elementor-container elementor-column-gap-extended">
                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b4d1359" data-id="b4d1359" data-element_type="column">
