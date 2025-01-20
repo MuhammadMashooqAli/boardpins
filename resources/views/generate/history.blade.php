@@ -6,47 +6,56 @@
 <link rel="stylesheet" href="assets/css/pins/generate.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <main>
+<style>
+    .pagination .page-link {
+        font-size: 0.875rem; /* Adjust size */
+        padding: 0.5rem 0.75rem; /* Adjust padding */
+    }
+    .pagination .page-item.active .page-link {
+        background-color: #007bff; /* Active background color */
+        border-color: #007bff;
+        color: white;
+    }
+    .shadow-sm > span,  .shadow-sm >  a .w-5{
+        width: 3%;
+        display: inline-block;
+    }
+   .justify-content-center nav .justify-between {
+        display:none;
+    }
+    .justify-content-center{    margin-top: 5%;
+        text-align: center;
+    }
+</style>
+
 
       <!-- tp-about-area-start -->
       <div class="tp-about-area ab-area-sapce pt-120 pb-120">
        <div class="">
 <div class="container container-updated" style="margin-top:12%">
     <div class="row">
-        <div class="col-sm-3 postbox__comment-input">
-            
-            <input type="text" value="https://engine.com.pk/collections/women-upper" id="fetchUrl" class="form-control "/>
-            <br>
-
-            <!-- Template Selection -->
-            <select id="templateSelect" class="form-control">
-                <option value="1">Template 1</option>
-                <option value="2">Template 2</option>
-                <option value="3">Template 3</option>
-                <option value="4">Template 4</option>
-            </select>
-            <br> 
-
-            <div class="row">
-                <div class="col-sm-12"> 
-                    <button id="scrape-btn" class="tp-btn btn icon-20 r-04 btn--theme hover--theme">Generate Pins</button>
-                 </div>
-                 <div class="col-sm-12"> 
-                  <br>
-                    <button id="saveAllCards" class="tp-btn btn icon-20 r-04 btn--theme hover--theme" style="display:none">Save All Pins</button>
-                 </div>
-            </div>
-            <!-- Trigger button -->
-            <br>
-        </div>
-        <div class="col-sm-9">
-             <!-- Loading GIF -->
-             <div id="loading-spinner" class="loading-spinner">
-                <img src="{{url('img/loader.gif')}}" style="width:14%; padding-top:5%" alt="Loading...">
-            </div>
-
+        <div class="col-sm-12">
             <div id="image-container" class="row">
+            @foreach($pins as $pin)
                 <!-- Cards will be displayed here -->
+                <div class="col-md-3 maincard" data-pin="{{$pin->id}}" > 
+                  @if($pin->status == "pending")
+                    <span class="badge badge-danger">Pending</span>
+                  @elseif($pin->status == "published")
+                   <span class="badge badge-success">Published ({{ \Carbon\Carbon::parse($pin->publish_time)->format('M d, Y h:i A') }})</span>
+                  @else
+                @endif
+                {!! $pin->card_html !!}
+                  @if($pin->status == "pending")
+                      {!! $htmlTools !!}
+                  @endif
+                </div>
+            @endforeach
             </div>
+        </div>
+            <!-- Pagination Links -->
+        <div class="justify-content-center">
+            {{ $pins->links() }}
         </div>
     </div>
 </div>
@@ -85,7 +94,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" id="saveChangesBtn">Save Changes</button>
+        <button type="button" class="btn btn-primary" id="saveChangesBtnUpdated">Save Changes</button>
       </div>
     </div>
   </div>
@@ -128,71 +137,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="assets/js/pins/custom.js?v1.2"></script>
-<script>
-
-  function scehduleYourPins(){
-    $('#editModal').modal('show');
-  }
-// Function to take a screenshot of a specific element
-function takeScreenshot(element) {
-    return html2canvas(element, {
-        useCORS: true,
-        logging: false,
-        backgroundColor: null,
-        ignoreElements: (node) => {
-            // Exclude unnecessary elements
-            return (
-                node.tagName === "LINK" || // Ignore <link> elements (external stylesheets)
-                node.tagName === "SCRIPT" || // Ignore <script> elements
-                node.tagName === "STYLE" // Ignore <style> blocks if not needed
-            );
-        },
-    }).then((canvas) => canvas.toDataURL("image/png"));
-}
-
-// // Handle button click to save all cards
-// document.getElementById("saveAll").addEventListener("click", async function () {
-//     const cards = document.querySelectorAll(".card"); // Select all .card elements
-//     const dataToSave = [];
-
-//     // Loop through each card
-//     for (let i = 0; i < cards.length; i++) {
-//         const card = cards[i];
-//         const screenshot = await takeScreenshot(card); // Take a screenshot
-//         const htmlContent = card.outerHTML; // Get the HTML content
-//         dataToSave.push({
-//             filename: `card${i + 1}.png`,
-//             htmlFilename: `card${i + 1}.html`,
-//             screenshot: screenshot,
-//             html: htmlContent,
-//         });
-//     }
-
-//     // Send all data to the server
-//     fetch("save_cards.php", {
-//         method: "POST",
-//         headers: {
-//             "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({ cards: dataToSave }),
-//     })
-//         .then((response) => response.json())
-//         .then((data) => {
-//             if (data.success) {
-//                 alert("Cards saved successfully!");
-//             } else {
-//                 alert("Failed to save cards: " + data.message);
-//             }
-//         })
-//         .catch((error) => {
-//             console.error("Error:", error);
-//         });
-// });
-
-
-
-    </script>
+<script src="assets/js/pins/custom.js"></script>
 </div>
 </div>
 </main>

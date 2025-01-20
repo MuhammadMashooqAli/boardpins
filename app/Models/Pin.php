@@ -9,13 +9,8 @@ class Pin extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'name',
-        'description',
-        'image',
-        'created_by',
-        'pin_id',
-        'publish_time',
+    protected $guarded = [
+        'id'
     ];
 
     public function board()

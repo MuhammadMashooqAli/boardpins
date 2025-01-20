@@ -13,11 +13,15 @@ return new class extends Migration
     {
         Schema::create('pins', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('description');
-            $table->string('image');
+            $table->string('title');
+            $table->string('description')->nullabe();
+            $table->text('card_html');
+            $table->string('image')->nullabe();
             $table->foreignId('created_by')->constrained('users');
-            $table->string('pin_id')->unique();
+            $table->string('pin_id')->nullable();
+            $table->string('board_id')->nullable();
+            $table->string('btn_link')->nullable();
+            $table->string('status')->nullable();
             $table->timestamp('publish_time')->nullable();
             $table->timestamps();
         });

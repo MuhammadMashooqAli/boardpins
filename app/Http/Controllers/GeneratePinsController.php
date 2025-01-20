@@ -5,6 +5,7 @@ use Symfony\Component\DomCrawler\Crawler;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use App\Models\Board;
+use Barryvdh\Snappy\Facades\SnappyImage;
 
 class GeneratePinsController extends Controller
 {
@@ -82,6 +83,42 @@ class GeneratePinsController extends Controller
         });
     
         return $data;
+    }
+
+    public function generateImage()
+    {
+        $data = `<div class="card card-template-1">
+                                <div class="card-header">
+                                    <h5 class="card-title">Upper For WOMEN - ENGINE</h5>
+                                    <span class="card_published_date"></span>
+                                    <span class="card_board_id"></span>
+                                </div>
+                                <div class="website-link">
+                                    <span>engine.com.pk</span>
+                                </div>
+                                <img src="//engine.com.pk/cdn/shop/files/LR4019-WHT_4_800x1000_crop_center.jpg?v=1735815569" class="card-img" alt="Upper For WOMEN - ENGINE">
+                            </div>`;
+                            $base64Image = $this->imageToBase64("https://engine.com.pk/cdn/shop/files/LR4019-WHT_4_800x1000_crop_center.jpg?v=1735815569");
+
+        $html = view('generate.renderImage', [
+                                'data' => $base64Image, // Pass data to the Blade view
+                            ])->render();
+       // Generate the image using SnappyImage
+            $image = SnappyImage::loadHTML($html)
+            ->setOption('width', 24) // Set the width
+            ->setOption('height', 545) // Optionally set height
+            ->output();
+        return response($image)
+            ->header('Content-Type', 'image/png')
+            ->header('Content-Disposition', 'inline; filename="example.png"');
+    }
+
+    public function imageToBase64($url) {
+        return 'data:image/jpeg;base64,' . base64_encode(file_get_contents($url));
+    }
+
+    public function scheduling(){
+        return view('generate.schedule');
     }
     
 }

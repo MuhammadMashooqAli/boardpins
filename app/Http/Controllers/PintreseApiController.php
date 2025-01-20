@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Auth;
 use App\Models\Board;
+use App\Models\Pin;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 
@@ -87,7 +88,6 @@ class PintreseApiController extends Controller
     public function savePinterestPins(Request $request)
 {
     $user = Auth::user(); // Get the logged-in user
-    dd($request->all());
 
     if (!$user) {
         return response()->json(['success' => false, 'message' => 'User not authenticated'], 401);
@@ -95,36 +95,23 @@ class PintreseApiController extends Controller
 
     // Validate the request
     $request->validate([
-        'pins' => 'required|array', // Ensure pins array exists
-        'pins.*.card_html' => 'required|string', // Each pin should have card_html
-        'pins.*.title' => 'required|string|max:255', // Title is required
-        'pins.*.published_date' => 'nullable|date', // Optional published date
-        'pins.*.board_id' => 'nullable|string', // Optional board ID
-        'pins.*.btn_link' => 'nullable|url', // Optional button link
-        'pins.*.image' => 'required|file|mimes:jpg,jpeg,png|max:2048', // Image file
+        'cards' => 'required|array' // Ensure pins array exists
     ]);
 
     $savedPins = [];
-    foreach ($request->pins as $index => $pin) {
+    foreach ($request->cards as $index => $pin) {
         // Save the uploaded image
-        if ($request->hasFile("pins.$index.image")) {
-            $imageFile = $request->file("pins.$index.image");
-            $filename = uniqid() . '.' . $imageFile->getClientOriginalExtension();
-            $imageFile->move(public_path('uploads/pins'), $filename);
-            $imageUrl = url('uploads/pins/' . $filename);
-        } else {
-            $imageUrl = null; // Handle cases where the image is not uploaded
-        }
-
-        // Save pin data to the database
+               // Save pin data to the database $pin
         $savedPin = Pin::create([
-            'user_id' => $user->id,
-            'card_html' => $pin['card_html'],
-            'title' => $pin['title'],
-            'published_date' => $pin['published_date'] ?? null,
+            'created_by' => $user->id,
+            'card_html' => $pin['html'],
+            'title' => $pin['title'] ?? "Pin",
+            'description' => $pin['description'] ?? null,
             'board_id' => $pin['board_id'] ?? null,
+            'publish_time' => $pin['publish_time'] ?? null,
             'btn_link' => $pin['btn_link'] ?? null,
-            'image_url' => $imageUrl,
+            'image' => $pin['img'] ?? null,
+            'status' => 'pending'
         ]);
 
         $savedPins[] = $savedPin;
@@ -133,6 +120,73 @@ class PintreseApiController extends Controller
     return response()->json(['success' => true, 'savedPins' => $savedPins]);
 }
 
+
+public function updatePins(Request $request, $id)
+{
+    $user = Auth::user(); // Get the logged-in user
+
+    if (!$user) {
+        return response()->json(['success' => false, 'message' => 'User not authenticated'], 401);
+    }
+
+    // Validate the request
+    $request->validate([
+        'cards' => 'required|array' // Ensure pins array exists
+    ]);
+
+    $savedPins = [];
+    foreach ($request->cards as $index => $pin) {
+        // Save the uploaded image
+               // Save pin data to the database $pin
+        $savedPin = Pin::where('created_by', auth()->user()->id)->where('id', $id)->update([
+            'card_html' => $pin['html'],
+            'title' => $pin['title'] ?? "Pin",
+            'description' => $pin['description'] ?? null,
+            'board_id' => $pin['board_id'] ?? null,
+            'publish_time' => $pin['publish_time'] ?? null,
+            'btn_link' => $pin['btn_link'] ?? null,
+            'image' => $pin['img'] ?? null,
+        ]);
+
+        $savedPins[] = $savedPin;
+    }
+
+    return response()->json(['success' => true, 'savedPins' => $savedPins]);
+}
+
+
+public function deletePin(Request $request, $id)
+{
+    $user = Auth::user(); // Get the logged-in user
+
+    if (!$user) {
+        return response()->json(['success' => false, 'message' => 'User not authenticated'], 401);
+    }
+
+        // Save the uploaded image
+               // Save pin data to the database $pin
+        $savedPin = Pin::where('created_by', auth()->user()->id)->where('id', $id)->delete();
+
+
+    return response()->json(['success' => true, 'savedPins' => $savedPins]);
+}
+
+
+   public function pinsHistory(Request $request){
+      $user = Auth::user();
+      $pins = Pin::where('created_by', auth()->user()->id)->paginate(10);
+      $boards = Board::where('user_id', auth()->user()->id)->select('id', 'name')->get();
+      $htmlTools = '<div class="card-toolbar">
+                                    <div class="icon-group">
+                                        <i class="fab fa-pinterest uploadtoPinterest"></i>
+                                        <i class="fas fa-clock" onclick="enableEdit(this)"></i>
+                                        <i class="fas fa-pen edit-icon" onclick="enableEdit(this)"></i>
+                                        <i class="far fa-copy pin_copy"></i>
+                                        <i class="fas fa-trash-alt delete_pin"></i>
+                                    </div>
+                                </div>';
+       return view('generate.history', ['pins'=> $pins, 'boards' => $boards, 'htmlTools' => $htmlTools]);
+   }
 
     public function getBoards()
     {
@@ -230,5 +284,16 @@ class PintreseApiController extends Controller
         return response()->json(['success' => false, 'message' => $e->getMessage()], 500);
     }
 }
+
+    public function contactus(Request $request){
+        $request->validate([
+            'question' => 'required|string',
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'textarea' => 'required|string|max:2000',
+        ]);
+            // Example: Contact::create($request->all());
+        return response()->json(['message' => 'We have received your query! We will contact with you as soon as possible'], 200);
+    }
 
 }
