@@ -31,15 +31,15 @@
                                                 <!-- Logo -->
                                                 <!-- <img decoding="async" class="img-fluid" src="images/logo-white.png" alt="logo-image">		 -->
                                                 <a href="https://jthemes.net/themes/wp/martex">
-                                                <img decoding="async" class="img-fluid" src="../wp-content/uploads/2023/08/logo-white.png" alt="Logo">
+                                                <img decoding="async" class="img-fluid" src="{{logoWhiteUrl()}}" alt="PinsBuilder">
                                                 </a>
                                                 <!-- Title -->
-                                                <h2 class="s-42 w-700">Welcome<br>back to Martex</h2>
+                                                <h2 class="s-35 w-700">Welcome<br>back to PinsBuilder</h2>
                                                 <!-- Text -->
-                                                <p class="p-md mt-25">Integer congue sagittis and velna augue egestas magna suscipit purus aliquam</p>
+                                                <p class="p-md mt-25">"Welcome back! Let's create something amazing."</p>
                                                 <!-- Copyright -->
                                                 <div class="register-page-copyright">
-                                                   <p class="p-sm">&copy; 2023 Martex &#8211; All Rights Reserved</p>
+                                                   <p class="p-sm">&copy; 2025 PinCreater &#8211; All Rights Reserved</p>
                                                 </div>
                                              </div>
                                           </div>
@@ -89,7 +89,7 @@
                                                    </div>
                                              </div>
                                              </form>
-                                             <p class="create-account text-center">Don't have an account? <a class="color--theme" href="../register/index.html">SignUp</a></p>
+                                             <p class="create-account text-center">Don't have an account? <a class="color--theme" href="{{url('register')}}">SignUp</a></p>
                                           </div>
                                        </div>
                                        <!-- END LOGIN FORM -->

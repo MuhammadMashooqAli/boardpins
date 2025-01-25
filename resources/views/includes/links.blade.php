@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> @yield('title')</title>
+    <title> @yield('title') - Pins Builder</title>
 <meta name='robots' content='max-image-preview:large' />
 	<meta property="og:locale" content="en_US" />
 	<meta name="csrf-token" content="{{ csrf_token() }}">
@@ -40,9 +40,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link rel="canonical" href="{{url('/')}}" />
 <link rel='shortlink' href="{{url('/')}}" />
+<link rel="stylesheet" href="assets/css/font-awesome-pro.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+<link rel="icon" type="image/x-icon" href="{{url('img/favcon.png')}}">
 <style>
-	@if(request()->route()->getName() != 'home')
+	@if(request()->route()->getName() != 'mainIndex')
 	.navbar-light .wsmenu > .wsmenu-list > li > a.h-link{
 		color:initial !important;
 	}
@@ -65,6 +67,9 @@
 .toast-warning {
     background-color: #f89406 !important; /* Orange for warning */
     color: white !important;
+}
+.fa-check-circle{
+	color:green;
 }
 
 </style>

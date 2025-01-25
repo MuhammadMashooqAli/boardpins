@@ -1,9 +1,10 @@
 @extends('layouts.master')
-
+@section('title')
+ Generate Your Pins
+@endsection
 @section('content')
 <link rel="stylesheet" href="assets/css/flaticon.css">
-<link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-<link rel="stylesheet" href="assets/css/pins/generate.css">
+<link rel="stylesheet" href="assets/css/pins/generate.css?v=2.3">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <main>
 
@@ -19,20 +20,26 @@
 
             <!-- Template Selection -->
             <select id="templateSelect" class="form-control">
-                <option value="1">Template 1</option>
-                <option value="2">Template 2</option>
-                <option value="3">Template 3</option>
-                <option value="4">Template 4</option>
+            <option value="1">Template 1</option>
+            <option value="2">Template 2</option>
+            <option value="3">Template 3</option>
+            <option value="4">Template 4</option>
+            <option value="5">Template 5</option>
+            <option value="6">Template 6</option>
+            <option value="7">Template 7</option>
+            <option value="8">Template 8</option>
+            <option value="9">Template 9</option>
+            <option value="10">Template 10</option>
             </select>
             <br> 
 
             <div class="row">
                 <div class="col-sm-12"> 
-                    <button id="scrape-btn" class="tp-btn btn icon-20 r-04 btn--theme hover--theme">Generate Pins</button>
+                    <button id="scrape-btn" class="tp-btn btn icon-20 r-04 btn--theme hover--theme" style="width: 100%;"><i class="fab fa-pinterest"></i> Generate Pins</button>
                  </div>
                  <div class="col-sm-12"> 
                   <br>
-                    <button id="saveAllCards" class="tp-btn btn icon-20 r-04 btn--theme hover--theme" style="display:none">Save All Pins</button>
+                    <button id="saveAllCards" class="tp-btn btn icon-20 r-04 btn--theme hover--theme" style="display:none; width: 100%;"><i class="fas fa-save"></i> Save All Pins</button>
                  </div>
             </div>
             <!-- Trigger button -->
@@ -128,7 +135,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="assets/js/pins/custom.js?v1.2"></script>
+<script src="assets/js/pins/custom.js?v1.5"></script>
 <script>
 
   function scehduleYourPins(){

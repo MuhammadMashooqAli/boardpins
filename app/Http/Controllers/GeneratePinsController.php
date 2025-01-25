@@ -5,6 +5,7 @@ use Symfony\Component\DomCrawler\Crawler;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use App\Models\Board;
+use App\Models\Schedule;
 use Barryvdh\Snappy\Facades\SnappyImage;
 
 class GeneratePinsController extends Controller
@@ -118,7 +119,31 @@ class GeneratePinsController extends Controller
     }
 
     public function scheduling(){
-        return view('generate.schedule');
+        $schedule = Schedule::where('id', auth()->user()->id)->first();
+        return view('generate.schedule', compact('schedule'));
+    }
+
+    public function saveSchedule(Request $request){
+        $validated = $request->validate([
+            'pins_per_day' => 'required|string',
+            'time_from' => 'required|string',
+            'time_to' => 'required|string',
+            'status' => 'required'
+        ]);
+
+        Schedule::updateOrCreate(
+            [
+                'created_by' => auth()->id(), // Check if a schedule already exists for the logged-in user
+            ],
+            [
+                'pins_per_day' => $validated['pins_per_day'], // Update or create with these values
+                'time_from' => $validated['time_from'],
+                'time_to' => $validated['time_to'],
+                'status' => $validated['status']
+            ]
+        );        
+
+        return response()->json(['message' => 'Schedule saved successfully!'], 200);
     }
     
 }

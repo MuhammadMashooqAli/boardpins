@@ -77,7 +77,7 @@ class PintreseApiController extends Controller
                 $user->save();
             }
     
-            return redirect('/')->with('success', 'Pinterest access token saved successfully.');
+            return redirect('/home')->with(['success' => 'Pinterest access token saved successfully.']);
         } catch (\Exception $e) {
             return redirect()->back()->with('error', 'Failed to get access token: ' . $e->getMessage());
         }
@@ -225,7 +225,7 @@ public function deletePin(Request $request, $id)
                 );
             }
     
-            return $boards['items'] ?? [];
+            return redirect()->to('/home')->with(['success' => 'All Boards Fetched Successfully.']);
         } catch (\Exception $e) {
             return [
                 'error' => $e->getMessage()

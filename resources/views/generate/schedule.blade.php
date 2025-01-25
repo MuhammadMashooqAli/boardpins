@@ -1,14 +1,17 @@
 @extends('layouts.master')
-
+@section('title')
+Scheduling Yours Pins Times
+@endsection
 @section('content')
+<link rel="stylesheet" href="assets/css/font-awesome-pro.css">
 <link rel="stylesheet" href="assets/css/pins/generate.css">
 
 <main>
 <div class="container container-updated" style="margin-top:12%; justify-content:center">
 <div class="row">
- <h3> Scedule Your Pins</h3 >
+ <h3> Schedule Your Pins</h3 >
  <p>Manange your Pinterest scheduling settings and scheduled pins here.</p>
- <button id="schedulling" class="tp-btn btn icon-20 r-04 btn--theme hover--theme">Generate Pins</button>
+ <button id="schedulling" class="tp-btn btn icon-20 r-04 btn--theme hover--theme" style="width:30%; font-size: 85%;"><i class="fas fa-calendar-plus"></i> &nbsp;Schedule Pins</button>
  <!-- Edit Modal -->
  <div id="scehduleYourPins"  style="margin-top:2%;" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="citikidLoginModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -17,20 +20,28 @@
         <h5 class="modal-title">Pin Scheduling Settings</h5>
       </div>
       <div class="modal-body" style="margin:4%;">
-        <form id="pinsFortingTime">
+        <form id="pinsFortingTime" action="POST" url="{{url('save-schedule')}}">
           <div class="form-group">
-            <label for="editCardTitle">Pins per day</label>
-            <input type="number" id="pins_per_day" class="form-control" required>
+            <label for="editCardTitle">Pins per day:</label>
+            <input type="number" id="pins_per_day"  value="{{$schedule->pins_per_day ?? null}}" class="form-control" required>
           </div>
           <br>
           <div class="form-group">
-            <label for="editCardLink">Pin posting Times From</label>
-            <input type="datetime-local" id="time" class="form-control" required>
+            <label for="editCardLink">Pin posting Times From:</label>
+            <input type="time" id="timefrom" value="{{$schedule->time_from ?? null}}" class="form-control" required>
           </div>
           <br>
           <div class="form-group">
-            <label for="editCardLink">Pin posting Times To</label>
-            <input type="datetime-local" id="time" class="form-control" required>
+            <label for="editCardLink">Pin posting Times To:</label>
+            <input type="time" id="timeto"  value="{{$schedule->time_to ?? null}}" class="form-control" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="editCardLink">Scheduling Status</label>
+            <select class="form-control" name="status" id="status">
+              <option value="1" @if($schedule && $schedule->status == 1) selected @endif >Active</option>
+              <option value="0" @if($schedule && $schedule->status == 0) selected @endif >Inactive</option>
+            </select>
           </div>
         </form>
       </div>

@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('title')
+  Create 1K+ Pins WithIn Seconds
+@endsection
 @section('content')
 <div id="page" class="page">
    <div class="overflow-hidden post-118 page type-page status-publish hentry entry">

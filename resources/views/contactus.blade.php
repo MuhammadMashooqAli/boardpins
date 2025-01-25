@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('title')
+ Need Help? Contact Us 
+@endsection
 @section('content')
 <div id="page" class="page"><main id="content" class="main container-full pt-100 pb-0">
      
@@ -14,7 +17,7 @@
          <div class="elementor-widget-wrap elementor-element-populated">
                              <div class="section-title mb-70 elementor-element elementor-element-c635457 elementor-widget elementor-widget-section_title" data-id="c635457" data-element_type="widget" data-widget_type="section_title.default">
              <div class="elementor-widget-container">
-         <h2 class="title-element s-46">Questions? Let's Talk</h2><p class="description-element s-21">Want to learn more about Martex, get a quote, or speak with an expert? Let us know what you are looking for and we’ll get back to you right away </p>		</div>
+         <h2 class="title-element s-46">Questions? Let's Talk</h2><p class="description-element s-21">Want to learn more about PinsBuilder, get a quote, or speak with an expert? Let us know what you are looking for and we’ll get back to you right away </p>		</div>
              </div>
                  </div>
      </div>
@@ -60,7 +63,7 @@
      
                                  <div class="col-md-12">
                                      <p class="p-lg">Explain your question in details: </p>
-                                     <span>Your OS version, Martex version & build, steps you did. Be VERY precise!</span>
+                                     <span>Your OS version, PinsBuilder version & build, steps you did. Be VERY precise!</span>
                                                                              <span class="wpcf7-form-control-wrap" data-name="textarea"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea form-control message" aria-invalid="false" placeholder="I have a problem with..." name="textarea"></textarea></span> 
                                  </div> 
                                                                                      
@@ -71,7 +74,7 @@
                                  </div>
 
                                  <div class="contact-form-notice">
-                                     <p class="p-sm">We are committed to your privacy. Martex uses the information you 
+                                     <p class="p-sm">We are committed to your privacy. PinsBuilder uses the information you 
                                         provide us to contact you about our relevant content, products, and services. 
                                         You may unsubscribe from these communications at any time. For more information, 
                                         check out our <a href="privacy.html">Privacy Policy</a>.

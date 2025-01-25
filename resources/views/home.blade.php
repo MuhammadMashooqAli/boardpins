@@ -1,5 +1,7 @@
 @extends('layouts.master')
-
+@section('title')
+Dashboard 
+@endsection
 @section('content')
 <main>
 <div class="container container-updated" style="margin-top:12%">
@@ -9,7 +11,43 @@
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="txt-block elementor-element elementor-element-754e01b elementor-widget elementor-widget-content-text" data-id="754e01b" data-element_type="widget" data-widget_type="content-text.default">
 				<div class="elementor-widget-container">
-			<span class="name-element section-id">One-Stop Solution</span><h2 class="title-element s-46 w-700">Smart solutions, real-time results</h2><p class="subtitle-element default">Sodales tempor sapien quaerat ipsum and congue undo laoreet turpis neque auctor turpis vitae dolor luctus placerat magna ligula and cursus vitae </p><div class="cbox-1 ico-15"><div class="cbox-1-txt"><p>Magna dolor luctus at egestas sapien</p></div></div><div class="cbox-1 ico-15"><div class="ico-wrap color--theme"><div class="cbox-1-ico">&nbsp;</div></div><div class="cbox-1-txt"><p>Cursus purus suscipit vitae cubilia magnis volute egestas vitae sapien turpis and ultrice magnis</p></div></div><div class="cbox-1 ico-15"><div class="ico-wrap color--theme"><div class="cbox-1-ico">&nbsp;</div></div><div class="cbox-1-txt"><p class="mb-0">Volute turpis dolores and sagittis congue</p></div></div><div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"></div>		</div>
+			<span class="name-element section-id">One-Stop Solution</span><h2 class="title-element s-46 w-700">Smart solutions, real-time results</h2><p class="subtitle-element default">
+            PinsBuilder is the ultimate Pinterest automation tool that empowers creators, marketers, and businesses to scale their Pinterest strategy effortlessly. With PinsBuilder, you can generate up to 1,000 high-quality, dynamic pins in just seconds, saving time and boosting your reach.
+<div class="cbox-1 ico-15"><div class="cbox-1-txt"><p><b>Key Features:</b></p></div>
+</div>
+<div class="cbox-1 ico-15">
+    <div class="ico-wrap color--theme">
+        <div class="cbox-1-ico">&nbsp;</div>
+    </div>
+        <div class="cbox-1-txt">
+    <p>Create bulk pins quickly with customizable templates.
+    </p></div>
+</div>
+<div class="cbox-1 ico-15">
+    <div class="ico-wrap color--theme">
+        <div class="cbox-1-ico">&nbsp;</div>
+    </div>
+        <div class="cbox-1-txt">
+    <p>Optimize pins with SEO-friendly descriptions.
+    </p></div>
+</div>
+<div class="cbox-1 ico-15">
+    <div class="ico-wrap color--theme">
+        <div class="cbox-1-ico">&nbsp;</div>
+    </div>
+        <div class="cbox-1-txt">
+    <p>Drive traffic and engagement with stunning visuals.
+    </p></div>
+</div>
+<div class="cbox-1 ico-15">
+    <div class="ico-wrap color--theme">
+        <div class="cbox-1-ico">&nbsp;</div>
+    </div>
+        <div class="cbox-1-txt">
+    <p>Perfect for bloggers, e-commerce brands, and content creators.
+    </p></div>
+</div>
+        <div class="d-flex btn-trait-group flex-wrap justify-content-start gap-2 mb-2"></div>		</div>
 				</div>
 					</div>
 		</div>
@@ -37,8 +75,12 @@
                     </div> <!-- End Icon -->
                                 <!-- Text -->
                 <div class="fbox-txt">
-                    <h5 class="s-19 w-700">Verify Pinterest Profile</h5>
-                    <p>Luctus augue egestas undo ultrice and quisque lacus Luctus  </p>
+                    <h5 class="s-19 w-700">Verify Pinterest Profile 
+                    @if(auth()->user()->code)    
+                    <i class="fas fa-check-circle"></i>
+                    @endif
+                </h5>
+                    <p>Authenticate your Pinterest account to connect seamlessly and start scheduling your pins effortlessly.</p>
                 </div>
             </div>
                 </a>
@@ -59,8 +101,8 @@
                     </div> <!-- End Icon -->
                                 <!-- Text -->
                 <div class="fbox-txt">
-                    <h5 class="s-19 w-700">Import Boards</h5>
-                    <p>Luctus augue egestas undo ultrice and quisque lacus Luctus augue egestas  </p>
+                    <h5 class="s-19 w-700"><a href="{{url('fetch-all-boards')}}">Import Boards</a></h5>
+                    <p>Import your Pinterest boards to easily manage and schedule pins directly from your account. </p>
                 </div>
             </div>
         </div>
@@ -80,8 +122,8 @@
                     </div> <!-- End Icon -->
                                 <!-- Text -->
                 <div class="fbox-txt">
-                    <h5 class="s-19 w-700">Generate Pins</h5>
-                    <p>Luctus augue egestas undo ultrice and quisque lacus Luctus augue egestas  </p>
+                    <h5 class="s-19 w-700"><a href="{{url('generate')}}">Generate Pins</a></h5>
+                    <p>"Effortlessly generate pins by fetching images directly from your website. Select the ones you want, customize them, and get them ready to publish on Pinterest in just a few clicks." </p>
                 </div>
             </div>
         </div>
@@ -101,8 +143,8 @@
                     </div> <!-- End Icon -->
                                 <!-- Text -->
                 <div class="fbox-txt">
-                    <h5 class="s-19 w-700">Schedule Pins</h5>
-                    <p>Luctus augue egestas undo ultrice and quisque lacus Luctus augue egestas  </p>
+                    <h5 class="s-19 w-700"><a href="{{url('scheduling')}}">Schedule Pins</a></h5>
+                    <p>"Set your pins to be published automatically at your preferred times. Simply schedule once, and let the system handle the rest for consistent Pinterest activity."</p>
                 </div>
             </div>
         </div>
@@ -115,4 +157,12 @@
 		</section>        
      </div>
 </main>
+@if (session('success'))
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            toastr.success("{{ session('success') }}");
+        });
+    </script>
+@endif
+
 @endsection

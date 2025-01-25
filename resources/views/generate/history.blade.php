@@ -1,8 +1,9 @@
 @extends('layouts.master')
-
+@section('title')
+ Your Pins History
+@endsection
 @section('content')
 <link rel="stylesheet" href="assets/css/flaticon.css">
-<link rel="stylesheet" href="assets/css/font-awesome-pro.css">
 <link rel="stylesheet" href="assets/css/pins/generate.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <main>
@@ -36,6 +37,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div id="image-container" class="row">
+          @if($pins->count() > 0)
             @foreach($pins as $pin)
                 <!-- Cards will be displayed here -->
                 <div class="col-md-3 maincard" data-pin="{{$pin->id}}" > 
@@ -51,6 +53,9 @@
                   @endif
                 </div>
             @endforeach
+          @else
+          <center><span> No Pins Found </span></center>
+          @endif
             </div>
         </div>
             <!-- Pagination Links -->
